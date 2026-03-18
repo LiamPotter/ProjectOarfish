@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GenOcean
+  m_Shader: {fileID: 4800000, guid: ae6f84230cddb114eb3e56901e27cf8d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FoamTex:
+        m_Texture: {fileID: 2800000, guid: 61c1c9ed4f9b4b04aa0df59554767c54, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 09c79a9f2f529ee4d841902c05c78420, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WakeRT:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AbsorptionB: 0.3
+    - _AbsorptionDepth: 8
+    - _AbsorptionG: 0.9
+    - _AbsorptionR: 2.8
+    - _DepthDistance: 2
+    - _FoamScale: 2
+    - _FoamThreshold: 0.965
+    - _FresnelPower: 10
+    - _MaxAlpha: 0.97
+    - _Metallic: 0
+    - _MinAlpha: 0.55
+    - _Mode: 0
+    - _MurkDensity: 1.2
+    - _NormalScale: 0.86
+    - _NormalSpeed: 0.01
+    - _NormalStrength: 0.49
+    - _Smoothness: 0.206
+    - _WakeFoamStrength: 1.4
+    - _WakeRTWorldSize: 61
+    - _WakeTurbStrength: 0.8
+    - _WaveHeight: 0.1
+    - _WaveLength: 88.1
+    - _WaveSpeed: 0.1
+    - _WaveSteepness: 0.5
+    m_Colors:
+    - _DeepColor: {r: 0.01437344, g: 0.06240108, b: 0.16037738, a: 0.9}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.25490198}
+    - _MurkColor: {r: 0, g: 0.11999995, b: 0.17999998, a: 1}
+    - _ShallowColor: {r: 0.070309706, g: 0.110510655, b: 0.18867922, a: 0.94509804}
+    - _WakeFoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WakeRTWorldPos: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveDirection1: {r: 1, g: 0, b: 0.5, a: 0}
+    - _WaveDirection2: {r: 0.8, g: 0, b: 0.6, a: 0}
+    - _WaveDirection3: {r: 0.3, g: 0, b: -0.9, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &7902880914074794950
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
+  version: 10
