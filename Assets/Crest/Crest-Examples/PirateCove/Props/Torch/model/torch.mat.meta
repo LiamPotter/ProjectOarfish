@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 95b7f65f4132c7640b8803c5c35ee2f6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Props/Torch/model/torch.mat
+  uploadId: 855672

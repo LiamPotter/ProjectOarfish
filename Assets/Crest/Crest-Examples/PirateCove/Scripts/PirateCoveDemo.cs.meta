@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 078bc43c1b57add4f8b9853653c31541
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Scripts/PirateCoveDemo.cs
+  uploadId: 855672

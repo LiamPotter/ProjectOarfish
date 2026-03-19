@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: faba69b00ed6645938ffd34f241b3305
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Examples/Scripts/CustomPassForCamera.cs
+  uploadId: 855672

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a9d81cae4c63249a59a24580587d70f6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Shared/Scripts/InputModulePatcher.cs
+  uploadId: 855672

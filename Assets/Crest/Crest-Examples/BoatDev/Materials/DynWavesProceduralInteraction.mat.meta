@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b0bf1df974228684ebe00bfe0f45a79b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/BoatDev/Materials/DynWavesProceduralInteraction.mat
+  uploadId: 855672

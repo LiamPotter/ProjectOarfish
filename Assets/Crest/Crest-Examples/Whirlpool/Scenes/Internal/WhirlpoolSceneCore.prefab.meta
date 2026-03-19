@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 123dc0a3f87264eff99c9418d93279b2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Whirlpool/Scenes/Internal/WhirlpoolSceneCore.prefab
+  uploadId: 855672

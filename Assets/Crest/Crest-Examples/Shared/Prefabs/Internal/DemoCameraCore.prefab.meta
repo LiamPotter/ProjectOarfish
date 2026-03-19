@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8d759143e291542dba0cd3834b6e2623
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Shared/Prefabs/Internal/DemoCameraCore.prefab
+  uploadId: 855672

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 93632dc736a214a419a990743badcde2
+timeCreated: 1520441663
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/BoatDev/Scripts/LerpCam.cs
+  uploadId: 855672

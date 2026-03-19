@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4ab96e03026384cceb83ef24c0bd8d79
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Shared/Settings/LightingSettings.lighting
+  uploadId: 855672

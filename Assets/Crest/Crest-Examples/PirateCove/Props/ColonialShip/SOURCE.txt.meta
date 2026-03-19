@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 83d54f64f7c58044e9bf299f9169ad91
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Props/ColonialShip/SOURCE.txt
+  uploadId: 855672

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db1cb3cd097fe014c8560afd56ce3a98
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Props/Sycamore/sources/sycamore_04.asset
+  uploadId: 855672

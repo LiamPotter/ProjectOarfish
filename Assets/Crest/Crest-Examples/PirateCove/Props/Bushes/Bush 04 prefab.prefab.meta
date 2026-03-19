@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 532066205bc320d4aa4647332e9d2ffa
+labels:
+- Environment
+- Plant
+- Bush
+- Foliage
+- Nature
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Props/Bushes/Bush 04 prefab.prefab
+  uploadId: 855672

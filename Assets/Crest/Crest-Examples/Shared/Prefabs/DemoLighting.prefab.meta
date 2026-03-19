@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 37bbe23c17398419cbc8674f5c5dbccb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Shared/Prefabs/DemoLighting.prefab
+  uploadId: 855672

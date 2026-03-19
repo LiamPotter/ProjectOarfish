@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6f9670b4a4aab47ebb985e512d87b777
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/BoatDev/Scenes/Internal/BoatSceneCore.prefab
+  uploadId: 855672

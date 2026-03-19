@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df27fb4d1f34a1a44a77f2d4a58d0bdb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Data/Shots/ShotDynamicWaveConditions.asset
+  uploadId: 855672

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0d43cd9f23f59cf45afa1e0ef18a1f7b
+timeCreated: 1539710530
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Props/Photoscanned MoutainsRocks
+    PBR/sources/Prefabs/MountainRocks01_B.prefab
+  uploadId: 855672

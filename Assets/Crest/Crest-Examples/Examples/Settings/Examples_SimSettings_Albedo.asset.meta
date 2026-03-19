@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ae488c67f7cd4a32a3eb3b96a8e5d2c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Examples/Settings/Examples_SimSettings_Albedo.asset
+  uploadId: 855672

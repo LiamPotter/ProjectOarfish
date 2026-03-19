@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f71755c1f34e774b89d390b7925e615
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 8574412962073106934
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Data/Terrain/Sand_Gravel.terrainlayer
+  uploadId: 855672

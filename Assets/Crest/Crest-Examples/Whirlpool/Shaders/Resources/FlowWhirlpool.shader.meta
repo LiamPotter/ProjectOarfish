@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 972dfa3346f74214c9a9d276184b5cb3
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Whirlpool/Shaders/Resources/FlowWhirlpool.shader
+  uploadId: 855672

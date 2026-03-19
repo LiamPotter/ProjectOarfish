@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 748316a63c005e44bba905a59cdadf72
+timeCreated: 1478164886
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Props/Barrels/Source/Imports/Materials/Barrel1.mat
+  uploadId: 855672

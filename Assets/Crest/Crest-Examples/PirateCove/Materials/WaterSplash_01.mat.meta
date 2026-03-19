@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 51f42833b94ba5a4bb933f65890f58c7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Materials/WaterSplash_01.mat
+  uploadId: 855672

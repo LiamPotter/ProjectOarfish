@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0dd6ed13a808e4e71bba19b046e4d242
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Examples/Settings/Examples_SimSettings_ClipSurface.asset
+  uploadId: 855672

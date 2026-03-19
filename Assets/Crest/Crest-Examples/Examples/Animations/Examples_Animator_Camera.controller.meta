@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7cbb5d615a78f4ce5827d57b0a80ba5e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/Examples/Animations/Examples_Animator_Camera.controller
+  uploadId: 855672

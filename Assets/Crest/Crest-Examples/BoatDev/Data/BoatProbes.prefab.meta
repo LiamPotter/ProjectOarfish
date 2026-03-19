@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a9de35a642561b7479e8ab40bb529e8c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/BoatDev/Data/BoatProbes.prefab
+  uploadId: 855672

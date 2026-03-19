@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3f8343ae352520c458afe320e8b8d4ee
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/LakesAndRivers/Settings/LakesAndRivers_SimSettings_AnimatedWaves.asset
+  uploadId: 855672

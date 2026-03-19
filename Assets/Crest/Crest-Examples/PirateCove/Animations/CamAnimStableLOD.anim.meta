@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59b83652cbe239f458822bfe267fd092
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/PirateCove/Animations/CamAnimStableLOD.anim
+  uploadId: 855672

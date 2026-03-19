@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 89ffc7ebe245b2a4c9aed6db437faf11
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.3
+  assetPath: Assets/Crest/Crest-Examples/LakesAndRivers/Settings/LakesAndRivers_SimSettings_Foam.asset
+  uploadId: 855672
