@@ -8576,7 +8576,7 @@ Transform:
   m_GameObject: {fileID: 3192134126276224156}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9359005, z: -0, w: 0.35226443}
-  m_LocalPosition: {x: -46.7, y: -0.43, z: 23.44}
+  m_LocalPosition: {x: -46.7, y: -0.09, z: 23.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24319,7 +24319,7 @@ Transform:
   m_GameObject: {fileID: 8641116702425604196}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.88998127, z: -0, w: 0.45599723}
-  m_LocalPosition: {x: -48.95, y: -0.191, z: 18.74}
+  m_LocalPosition: {x: -48.95, y: 0.15, z: 18.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25971,9 +25971,9 @@ PrefabInstance:
       propertyPath: areaCenter
       value: 
       objectReference: {fileID: 5540616843191075902}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: swimRadius
-      value: 15.93
+    - target: {fileID: 8403918137526033511, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
