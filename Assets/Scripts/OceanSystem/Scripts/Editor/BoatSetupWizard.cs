@@ -128,6 +128,7 @@ public class BoatSetupWizard : EditorWindow
                 camGO = new GameObject("BoatCamera");
                 camGO.AddComponent<Camera>();
                 camGO.AddComponent<AudioListener>();
+                Debug.Log("[BoatSetupWizard] Making new Camera.");
             }
 
             var camComp           = camGO.GetOrAddComponent<BoatCamera>();
