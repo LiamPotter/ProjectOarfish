@@ -17,6 +17,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 651880427819674011, guid: 499d364c7cfabcc4f8d52118a95a73c3, type: 3}
+      propertyPath: _settingsAlbedo
+      value: 
+      objectReference: {fileID: 11400000, guid: abcb33972fbb5614a9cd14965f3e63e7, type: 2}
+    - target: {fileID: 651880427819674011, guid: 499d364c7cfabcc4f8d52118a95a73c3, type: 3}
       propertyPath: _globalWindSpeed
       value: 10
       objectReference: {fileID: 0}
@@ -29,9 +33,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 49673c234f4fc71458692c8bbd4c77a2, type: 2}
     - target: {fileID: 651880427819674011, guid: 499d364c7cfabcc4f8d52118a95a73c3, type: 3}
+      propertyPath: _createAlbedoData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 651880427819674011, guid: 499d364c7cfabcc4f8d52118a95a73c3, type: 3}
       propertyPath: _simSettingsShadow
       value: 
       objectReference: {fileID: 11400000, guid: 56ef0239a92acef47b79230695a7c274, type: 2}
+    - target: {fileID: 651880427819674011, guid: 499d364c7cfabcc4f8d52118a95a73c3, type: 3}
+      propertyPath: _globalWindTurbulence
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 651880427819674011, guid: 499d364c7cfabcc4f8d52118a95a73c3, type: 3}
       propertyPath: _simSettingsDynamicWaves
       value: 
