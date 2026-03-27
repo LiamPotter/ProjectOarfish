@@ -1,5 +1,6 @@
 using System;
 using Crest;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Fishing
@@ -24,7 +25,9 @@ namespace Fishing
 		public override float ObjectWidth => m_bobberFloatationWidth;
 		public override bool InWater => m_inWater;
 		public override Vector3 Velocity => m_rigidbody.linearVelocity;
-
+		public Vector3 InputVelocity => m_inputVelocity;
+		
+		private Vector3 m_inputVelocity = Vector3.zero;
 		private Vector3 m_displacement;
 		private float m_height;
 		private Vector2 m_fishForceVector;
@@ -37,17 +40,6 @@ namespace Fishing
 			m_camera = Camera.main;
 		}
 
-		private void Update()
-		{
-			float xInput = Input.GetKey(KeyCode.J) ? -1 : Input.GetKey(KeyCode.L) ? 1 : 0;
-			float yInput = Input.GetKey(KeyCode.K) ? -1 : Input.GetKey(KeyCode.I) ? 1 : 0;
-			Vector2 rawInput = new Vector2(xInput, yInput);
-			Vector2 relativeInputX = m_camera.transform.right * xInput;
-			Vector2 relativeInputY = m_camera.transform.forward * yInput;
-			Vector2 relativeInput = relativeInputX + relativeInputY;
-
-			m_fishForceVector = relativeInput * m_fishForce;
-		}
 
 		// Update is called once per frame
 		private void FixedUpdate()
@@ -103,28 +95,47 @@ namespace Fishing
 			m_inWater = false;
 		}
 
-		public void AddForce(Vector3 force)
+		public void AddForce(Vector3 force, bool allowApproach = true)
 		{
-			m_rigidbody.AddForce(force, ForceMode.Acceleration);
-			Vector3 relativeInputX = m_camera.transform.right * force.x;
-			Vector3 relativeInputZ = m_camera.transform.forward * force.z;
+			m_inputVelocity = force;
+			Vector3 flatPos = transform.position;
+			flatPos.y = 0;
+			Vector3 flatCamPos = m_camera.transform.position;
+			flatCamPos.y = 0;
+			Vector3 dirFromCam = math.normalize(flatPos-flatCamPos);
+			Vector3 rightFromCam = math.cross(dirFromCam, Vector3.up);
+			Vector3 relativeInputX = rightFromCam * force.x;
+			Vector3 relativeInputZ = dirFromCam * force.z;
 			Vector3 relativeInput = relativeInputX + relativeInputZ;
 			relativeInput.y = 0;
 			m_rigidbody.AddForce(relativeInput, ForceMode.Acceleration);
+
+			if (allowApproach == false)
+			{
+				var forcePosition = m_rigidbody.position + m_bobberFloatOffset * Vector3.up;
+				m_rigidbody.AddForceAtPosition(10 * Vector3.Dot(-dirFromCam, m_rigidbody.linearVelocity) *dirFromCam, forcePosition,
+					ForceMode.Acceleration);
+			}
 		}
 
 		private void OnDrawGizmos()
 		{
-			if (m_debugDraw == false)
+			if (m_debugDraw == false || m_camera == null)
 			{
 				return;
 			}
+			Vector3 flatPos = transform.position;
+			flatPos.y = 0;
+			Vector3 flatCamPos = m_camera.transform.position;
+			flatCamPos.y = 0;
+			Vector3 dirFromCam = math.normalize(flatPos-flatCamPos);
+			Vector3 rightFromCam = math.cross(dirFromCam, Vector3.up);
+			Gizmos.color = Color.darkGreen;
+			Gizmos.DrawRay(transform.position, dirFromCam * 5);
+			Gizmos.color = Color.blueViolet;
+			Gizmos.DrawRay(transform.position, rightFromCam * 5);
 
-			Gizmos.color = Color.greenYellow;
-			Gizmos.DrawSphere(transform.position + m_displacement, 0.1f);
-			Gizmos.color = Color.darkRed;
-			Gizmos.DrawSphere(transform.position - m_displacement, 0.1f);
-			UnityEditor.Handles.Label(transform.position + Vector3.up / 2, $"height: {m_height}");
+
 		}
 	}
 }

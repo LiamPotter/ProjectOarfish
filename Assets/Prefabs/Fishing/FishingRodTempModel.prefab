@@ -1185,6 +1185,7 @@ GameObject:
   - component: {fileID: 7169185211608611023}
   - component: {fileID: 1566886951735888879}
   - component: {fileID: 3778897095202833923}
+  - component: {fileID: 571591559479616622}
   - component: {fileID: 1692426436016122162}
   m_Layer: 0
   m_Name: FishingRodTempModel
@@ -1257,6 +1258,28 @@ MonoBehaviour:
   bobFadesWithTension: 1
   tautnessOverride: 0
   debugDraw: 1
+--- !u!95 &571591559479616622
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5379117829961871909}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 88980b72e95699644aaec85089243afa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!120 &1692426436016122162
 LineRenderer:
   serializedVersion: 3
@@ -1615,7 +1638,7 @@ MonoBehaviour:
   m_dragInWaterRight: 2
   m_dragInWaterForward: 1
   m_rigidbody: {fileID: 8004733697510978899}
-  m_debugDraw: 1
+  m_debugDraw: 0
 --- !u!1 &8603226110521947807
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,16 +51,19 @@ namespace Fishing
 
 		private void OnWaterEntered()
 		{
-			
 		}
-		
 
-		public void UpdateFishingSequence(bool isStunned, bool isReeling, float reelForce, FishBehaviourValues.Value currentValue)
+
+		public void UpdateFishingSequence(bool isStunned, bool isReeling, bool isAligned, float reelForce, FishBehaviourValues.Value currentValue)
 		{
-			Vector3 forceToAdd = isStunned ? isReeling ? -Vector3.forward*reelForce : Vector3.zero : currentValue.ForceVector;
-			m_fishingBobberFloatation.AddForce(forceToAdd);
+			Vector3 forceToAdd = isStunned
+				? isReeling ? -Vector3.forward * reelForce : Vector3.zero
+				: (isAligned ? currentValue.ForceVector * 0.5f : currentValue.ForceVector);
+			bool allowApproach = isStunned && isReeling;
+
+			m_fishingBobberFloatation.AddForce(forceToAdd, allowApproach);
 		}
-		
+
 
 		public void ChargeThrow(float dt)
 		{
