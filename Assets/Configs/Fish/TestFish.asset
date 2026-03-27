@@ -16,13 +16,16 @@ MonoBehaviour:
     <Values>k__BackingField:
     - m_direction: {x: 1, y: 0}
       m_force: 0.5
-      m_duration: 2
-      m_stunDuration: 1
+      m_neededPullDuration: 2
+      m_maxDuration: 5
+      m_stunDuration: 2
     - m_direction: {x: -1, y: 0}
       m_force: 0.5
-      m_duration: 2
-      m_stunDuration: 1
+      m_neededPullDuration: 2
+      m_maxDuration: 5
+      m_stunDuration: 2
     - m_direction: {x: 1, y: 0}
       m_force: 0.5
-      m_duration: 2
-      m_stunDuration: 1
+      m_neededPullDuration: 2
+      m_maxDuration: 5
+      m_stunDuration: 2

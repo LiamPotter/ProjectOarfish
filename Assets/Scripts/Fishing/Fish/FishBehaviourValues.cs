@@ -12,7 +12,8 @@ namespace Fishing.Fish
 			[Tooltip("The direction the fish will pull at this step. Relative to the camera's view.")]
 			public Vector2 m_direction;
 			public float m_force;
-			public float m_duration;
+			public float m_neededPullDuration;
+			public float m_maxDuration;
 			[Tooltip("How long the fish is stunned once this step is completed.")]
 			public float m_stunDuration;
 			
