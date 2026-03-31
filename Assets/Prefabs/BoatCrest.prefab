@@ -443,9 +443,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8554a2d0a19dcfa438f9de048e46b31d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingController
+  m_fishingLine: {fileID: 0}
   m_rodHelper: {fileID: 0}
   m_boatCamera: {fileID: 0}
   m_characterAnimator: {fileID: 7404925633657957373}
+  m_rodAnimator: {fileID: 0}
   m_splashEffectPrefab: {fileID: 7271828082418525462, guid: eb2a05676df94ba48931b5cf25f6cc83, type: 3}
   m_testFishConfig: {fileID: 11400000, guid: c21a82a75c246ab4da4d16a2eaf12deb, type: 2}
   m_reelForce: 0.2
@@ -453,6 +455,9 @@ MonoBehaviour:
   m_rodHealthLossPerSecond: 0.25
   m_rodHealthGainPerSecond: 0.1
   m_maxInputDelta: 20
+  m_minimumInputToFishAlignment: 0.75
+  m_maxSequenceStartDuration: 2
+  m_sequenceStartForce: 2
 --- !u!114 &9102151457648917762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,7 +926,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 262444440271905599, guid: 36a249e278ec66443af922374cdaae77, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a249e278ec66443af922374cdaae77, type: 3}

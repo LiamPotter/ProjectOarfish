@@ -20,6 +20,8 @@ namespace Fishing.Fish
 			public Vector3 ForceVector=> new Vector3(m_direction.x,0,m_direction.y)*m_force;
 		}
 
+		[Tooltip("The distance this fish will try to reach before starting the fishing seqeuence.")]
+		[field: SerializeField] public float WantedStartDistance { get; private set; }
 		[Tooltip("A fish will run through these values sequentially while being fished.")]
 		[field: SerializeField] public Value[] Values { get; private set; }
 

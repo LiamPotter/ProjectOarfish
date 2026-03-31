@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TestFish
   m_EditorClassIdentifier: Assembly-CSharp::Fishing.Fish.FishConfig
   <Behaviour>k__BackingField:
+    <WantedStartDistance>k__BackingField: 8
     <Values>k__BackingField:
     - m_direction: {x: 1, y: 0}
       m_force: 0.5

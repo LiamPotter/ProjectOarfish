@@ -33,7 +33,6 @@ Material:
   - _FOAM3DLIGHTING_ON
   - _FOAM_ON
   - _PLANARREFLECTIONS_ON
-  - _PROCEDURALSKY_ON
   - _SHADOWS_ON
   - _SUBSURFACESCATTERING_ON
   - _SUBSURFACESHALLOWCOLOUR_ON
@@ -167,11 +166,11 @@ Material:
     - _NormalsStrengthOverall: 0.75
     - _OcclusionStrength: 1
     - _Parallax: 0.005
-    - _PlanarReflectionDistanceFactor: 0.2
-    - _PlanarReflectionIntensity: 0.5
-    - _PlanarReflectionNormalsStrength: 1
+    - _PlanarReflectionDistanceFactor: 0.75
+    - _PlanarReflectionIntensity: 0.7
+    - _PlanarReflectionNormalsStrength: 0.25
     - _PlanarReflections: 1
-    - _ProceduralSky: 1
+    - _ProceduralSky: 0
     - _Projection: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1

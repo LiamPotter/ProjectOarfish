@@ -98,17 +98,9 @@ namespace Fishing
 		public void AddForce(Vector3 force, bool allowApproach = true)
 		{
 			m_inputVelocity = force;
-			Vector3 flatPos = transform.position;
-			flatPos.y = 0;
-			Vector3 flatCamPos = m_camera.transform.position;
-			flatCamPos.y = 0;
-			Vector3 dirFromCam = math.normalize(flatPos-flatCamPos);
-			Vector3 rightFromCam = math.cross(dirFromCam, Vector3.up);
-			Vector3 relativeInputX = rightFromCam * force.x;
-			Vector3 relativeInputZ = dirFromCam * force.z;
-			Vector3 relativeInput = relativeInputX + relativeInputZ;
-			relativeInput.y = 0;
-			m_rigidbody.AddForce(relativeInput, ForceMode.Acceleration);
+
+			Vector3 relativeForce = GetVectorRelativeToCamera(force, out Vector3 dirFromCam);
+			m_rigidbody.AddForce(relativeForce, ForceMode.Acceleration);
 
 			if (allowApproach == false)
 			{
@@ -116,6 +108,30 @@ namespace Fishing
 				m_rigidbody.AddForceAtPosition(10 * Vector3.Dot(-dirFromCam, m_rigidbody.linearVelocity) *dirFromCam, forcePosition,
 					ForceMode.Acceleration);
 			}
+		}
+
+		public void AddTorqueForce(Vector3 force,  bool relativeToCamera = false)
+		{
+			var forcePosition = m_rigidbody.position + m_bobberFloatOffset * Vector3.up;
+			Vector3 relativeForce = GetVectorRelativeToCamera(force, out Vector3 _);
+			
+			m_rigidbody.AddForceAtPosition(relativeToCamera?relativeForce:force, forcePosition,ForceMode.Acceleration);
+		}
+
+		private Vector3 GetVectorRelativeToCamera(Vector3 vector, out Vector3 directionFromCamera)
+		{
+			Vector3 flatPos = transform.position;
+			flatPos.y = 0;
+			Vector3 flatCamPos = m_camera.transform.position;
+			flatCamPos.y = 0;
+			directionFromCamera = math.normalize(flatPos-flatCamPos);
+			Vector3 rightFromCam = math.cross(directionFromCamera, Vector3.up);
+			Vector3 relativeInputX = rightFromCam * vector.x;
+			Vector3 relativeInputZ = directionFromCamera * vector.z;
+			Vector3 relativeInput = relativeInputX + relativeInputZ;
+			relativeInput.y = 0;
+
+			return relativeInput;
 		}
 
 		private void OnDrawGizmos()

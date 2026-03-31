@@ -17,12 +17,15 @@ namespace Fishing
 		[Header("Throw Values"), SerializeField] private float m_maxThrowChargeTime = 2f;
 		[SerializeField] private Vector2 m_throwForceRange = new Vector2(2, 5);
 		[SerializeField] private Vector2 m_throwForceUpwardBiasRange = new Vector2(1, 3);
+		[Header("Crank Control")] [field: SerializeField] public CrankController CrankController { get; private set; } = new();
 
 		private float m_chargeTimer;
+		private Vector3 m_initialLocalPos;
 
 		public float ChargeCompletion => math.saturate(m_chargeTimer / m_maxThrowChargeTime);
 		public Transform BobberTransform => m_fishingBobberFloatation.transform;
 		public FishingBobberFloatation BobberFloatation => m_fishingBobberFloatation;
+		public Vector3 InitialLocalPos => m_initialLocalPos;
 
 		private Vector3 DirectionToCamera
 		{
@@ -42,8 +45,14 @@ namespace Fishing
 			}
 
 			m_fishingBobberFloatation.EnteredWater += OnWaterEntered;
+			m_initialLocalPos = transform.localPosition;
 		}
 
+		private void Update()
+		{
+			CrankController.Update(Time.deltaTime);
+		}
+		
 		private void OnDestroy()
 		{
 			m_fishingBobberFloatation.EnteredWater -= OnWaterEntered;
@@ -52,13 +61,13 @@ namespace Fishing
 		private void OnWaterEntered()
 		{
 		}
-
-
+		
+		
 		public void UpdateFishingSequence(bool isStunned, bool isReeling, bool isAligned, float reelForce, FishBehaviourValues.Value currentValue)
 		{
 			Vector3 forceToAdd = isStunned
 				? isReeling ? -Vector3.forward * reelForce : Vector3.zero
-				: (isAligned ? currentValue.ForceVector * 0.5f : currentValue.ForceVector);
+				: (isAligned ? currentValue.ForceVector * 0.75f : currentValue.ForceVector);
 			bool allowApproach = isStunned && isReeling;
 
 			m_fishingBobberFloatation.AddForce(forceToAdd, allowApproach);
@@ -93,6 +102,16 @@ namespace Fishing
 			m_chargeTimer = 0;
 		}
 
+		public void SetRodPosition(Vector3 localPosition)
+		{
+			transform.localPosition = localPosition;
+		}
+
+		public void ResetRodPosition()
+		{
+			transform.localPosition = m_initialLocalPos;
+		}
+		
 		public void SetBobberPhysicsActive(bool isActive) => m_fishingBobRigidbody.isKinematic = !isActive;
 	}
 }

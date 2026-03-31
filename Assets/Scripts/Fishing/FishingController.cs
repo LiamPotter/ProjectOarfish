@@ -2,6 +2,7 @@ using System;
 using Fishing.Fish;
 using Unity.Mathematics;
 using UnityEngine;
+using Utils;
 
 namespace Fishing
 {
@@ -25,18 +26,24 @@ namespace Fishing
 		[SerializeField] private FishingRodHelper m_rodHelper;
 		[SerializeField] private BoatCamera m_boatCamera;
 		[SerializeField] private Animator m_characterAnimator;
+		[SerializeField] private Animator m_rodAnimator;
 		[Header("Fishing Sequence")] [SerializeField] private GameObject m_splashEffectPrefab;
 		[SerializeField] private FishConfig m_testFishConfig;
+		[SerializeField] private ObjectShaker m_objectShaker;
 		[SerializeField] private float m_reelForce = 0.2f;
 		[SerializeField] private float m_sequenceCompleteDistance = 0.5f;
 
-		[Tooltip("How much the rod's health depletes if the player is performing the sequence incorrectly.")] [SerializeField]
-		private float m_rodHealthLossPerSecond = 0.25f;
+		[Tooltip("How much the rod's health depletes if the player is reeling incorrectly.")] [SerializeField]
+		private float m_rodHealthLossPerSecondFromReeling = 0.25f;
+[Tooltip("How much the rod's health depletes if the player is aligned incorrectly.")] [SerializeField]
+		private float m_rodHealthLossPerSecondFromAlignment = 0.15f;
 
 		[SerializeField] private float m_rodHealthGainPerSecond = 0.1f;
 		[SerializeField] private float m_maxInputDelta = 10f;
 		[SerializeField] private float m_minimumInputToFishAlignment = 0.75f;
-
+		[SerializeField] private float m_inputToFishAlignmentDamage = 0f;
+		[SerializeField] private float m_maxSequenceStartDuration = 2f;
+		[SerializeField] private float m_sequenceStartForce = 2f;
 
 		private FishConfig m_currentFish;
 		private GameObject m_splashEffectParent;
@@ -46,10 +53,12 @@ namespace Fishing
 		private float m_currentStaminaFishTimer;
 		private float m_currentFishStunTimer;
 		private float m_rodHealth = 1f;
-		private bool m_isReeling;
+
 		private float m_completeDistanceSqr;
 		private Vector2 m_currentFishingInput = new();
 		private State m_currentState = State.Idle;
+		private bool m_hasReachedStartingDistance;
+
 
 		public State CurrentState
 		{
@@ -63,10 +72,11 @@ namespace Fishing
 
 		public EndReason LastCatchResult { get; private set; } = EndReason.Cancelled;
 		public FishConfig LastCatchType { get; private set; } = null;
-		
+
 		public float InputToFishAlignment { get; private set; }
 		public bool IsInputAlignedWithFish => InputToFishAlignment >= m_minimumInputToFishAlignment;
-		public bool IsFishStunned { get; private set; }
+		public FlipActionBool IsReeling { get; private set; }
+		public FlipActionBool IsFishStunned { get; private set; }
 		public FishingRodHelper FishingRodHelper => m_rodHelper;
 		public Vector2 CurrentInput => m_currentFishingInput;
 		public float CurrentRodHealth => m_rodHealth;
@@ -75,6 +85,8 @@ namespace Fishing
 
 		private int FishingStartHash => Animator.StringToHash("FishingStart");
 		private int FishingEndHash => Animator.StringToHash("FishingEnd");
+		private int AnimatorVertical => Animator.StringToHash("Vertical");
+		private int AnimatorHorizontal => Animator.StringToHash("Horizontal");
 		private FishBehaviourValues.Value CurrentFishStep => m_currentFish.Behaviour.Values[m_currentFishStepIndex];
 		private Vector2 CamPositionFlat => new Vector2(m_boatCamera.transform.position.x, m_boatCamera.transform.position.z);
 		private Vector2 BobberPositionFlat => new Vector2(m_rodHelper.BobberTransform.position.x, m_rodHelper.BobberTransform.position.z);
@@ -88,6 +100,8 @@ namespace Fishing
 		{
 			m_splashEffectParent = Instantiate(m_splashEffectPrefab);
 			m_splashEffect = m_splashEffectParent.GetComponentInChildren<ParticleSystem>();
+			IsReeling = new FlipActionBool(false, ReelingFlipDetected);
+			IsFishStunned = new FlipActionBool(false, FishStunnedFlipDetected);
 		}
 
 		private void Update()
@@ -137,31 +151,49 @@ namespace Fishing
 			m_currentFishStunTimer = 0f;
 			m_rodHealth = 1f;
 			m_currentFishStepIndex = 0;
+			m_hasReachedStartingDistance = false;
 			m_completeDistanceSqr = m_sequenceCompleteDistance * m_sequenceCompleteDistance;
 
 			m_boatCamera.SetCameraMode(BoatCamera.CameraMode.FirstPersonTrack);
 
 			m_fishingLine.tautnessOverride = 1f;
 			m_fishingLine.enableBobAnimation = false;
+
+			Vector3 centeredRodPos = m_rodHelper.InitialLocalPos;
+			centeredRodPos.x = 0.1f;
+			m_rodHelper.SetRodPosition(centeredRodPos);
+
+			m_rodHelper.CrankController.SetSpeed(25, 0.15f);
 			m_splashEffect.Play(true);
 			FishingSequenceStart?.Invoke();
 		}
 
 		private void UpdateFishingSequence(float dt)
 		{
-			m_isReeling = Input.GetMouseButton(0);
-			
-			if (m_isReeling)
+			if (m_hasReachedStartingDistance == false)
 			{
-				if (IsFishStunned == false)
+				m_currentFishTimer += dt;
+				float distanceToBobber = math.distance(m_boatCamera.transform.position, m_rodHelper.BobberTransform.position);
+
+				if (distanceToBobber < m_currentFish.Behaviour.WantedStartDistance && m_currentFishTimer < m_maxSequenceStartDuration)
 				{
-					m_rodHealth -= dt * m_rodHealthLossPerSecond;
+					m_rodHelper.BobberFloatation.AddForce(Vector3.forward * m_sequenceStartForce);
+					UpdateSplashEffect();
 				}
+				else
+				{
+					Vector3 velocity = m_rodHelper.BobberFloatation.Velocity;
+					velocity.y = 0;
+
+					m_rodHelper.BobberFloatation.AddTorqueForce(-velocity * 2, false);
+					m_rodHelper.CrankController.SetSpeed(0, 0.5f);
+					m_hasReachedStartingDistance = true;
+					m_currentFishTimer = 0;
+				}
+
+				return;
 			}
-			else
-			{
-				m_rodHealth += dt * m_rodHealthGainPerSecond;
-			}
+
 
 			Vector2 mouseDelta = Input.mousePositionDelta;
 			Vector2 scaled = new Vector2(mouseDelta.x / m_maxInputDelta, mouseDelta.y / m_maxInputDelta);
@@ -169,8 +201,28 @@ namespace Fishing
 			m_currentFishingInput += scaled;
 			m_currentFishingInput = math.clamp(m_currentFishingInput, -Vector2.one, Vector2.one);
 
+			m_rodAnimator.SetFloat(AnimatorVertical, m_currentFishingInput.y);
+			m_rodAnimator.SetFloat(AnimatorHorizontal, -m_currentFishingInput.x);
+
 			Vector2 flatFishInput = new Vector2(m_rodHelper.BobberFloatation.InputVelocity.x, m_rodHelper.BobberFloatation.InputVelocity.z).normalized;
 			InputToFishAlignment = math.dot(m_currentFishingInput, flatFishInput);
+
+			IsReeling.Value = Input.GetMouseButton(0);
+
+			bool isReelingEarly = IsReeling && IsFishStunned == false;
+			bool isPoorlyAligned = InputToFishAlignment <= m_inputToFishAlignmentDamage && IsFishStunned == false;
+
+			if (isReelingEarly || isPoorlyAligned)
+			{
+				float damage = isReelingEarly ? m_rodHealthLossPerSecondFromReeling : m_rodHealthLossPerSecondFromAlignment;
+				m_rodHealth -= dt * damage;
+				m_objectShaker.SetIntensity(1f);
+			}
+			else
+			{
+				m_rodHealth += dt * m_rodHealthGainPerSecond;
+				m_objectShaker.SetIntensity(0f);
+			}
 
 			if (IsFishStunned == false)
 			{
@@ -182,7 +234,7 @@ namespace Fishing
 				m_currentStaminaFishTimer += dt;
 			}
 
-			IsFishStunned = m_currentStaminaFishTimer >= CurrentFishStep.m_neededPullDuration;
+			IsFishStunned.Value = m_currentStaminaFishTimer >= CurrentFishStep.m_neededPullDuration;
 
 			if (IsFishStunned)
 			{
@@ -205,13 +257,11 @@ namespace Fishing
 			}
 			else
 			{
-				m_splashEffectParent.transform.position = m_rodHelper.BobberTransform.position;
-				Vector3 velocity = math.normalize(m_rodHelper.BobberFloatation.Velocity);
-				velocity.y = 0;
-				m_splashEffectParent.transform.forward = velocity;
+				UpdateSplashEffect();
 			}
 
-			m_rodHelper.UpdateFishingSequence(IsFishStunned, m_isReeling, IsInputAlignedWithFish, m_reelForce, CurrentFishStep);
+			m_rodHelper.UpdateFishingSequence(IsFishStunned, IsReeling, IsInputAlignedWithFish, m_reelForce, CurrentFishStep);
+
 
 			if (m_rodHealth <= 0f)
 			{
@@ -223,6 +273,14 @@ namespace Fishing
 			{
 				EndFishingSequence(EndReason.Success);
 			}
+		}
+
+		private void UpdateSplashEffect()
+		{
+			m_splashEffectParent.transform.position = m_rodHelper.BobberTransform.position;
+			Vector3 velocity = math.normalize(m_rodHelper.BobberFloatation.Velocity);
+			velocity.y = 0;
+			m_splashEffectParent.transform.forward = velocity;
 		}
 
 		private void IncrementStep()
@@ -249,6 +307,26 @@ namespace Fishing
 			LastCatchResult = reason;
 			m_fishingLine.tautnessOverride = 0f;
 			m_fishingLine.enableBobAnimation = true;
+			m_rodAnimator.SetFloat(AnimatorVertical, 0);
+			m_rodAnimator.SetFloat(AnimatorHorizontal, 0);
+			m_rodHelper.ResetRodPosition();
+			m_rodHelper.CrankController.SetSpeed(0, 0.5f);
+			m_objectShaker.SetIntensity(0f);
+		}
+
+		private void ReelingFlipDetected(bool newValue)
+		{
+			SetCrankSpeed(newValue, IsFishStunned);
+		}
+
+		private void FishStunnedFlipDetected(bool newValue)
+		{
+			SetCrankSpeed(IsReeling, newValue);
+		}
+
+		private void SetCrankSpeed(bool isReeling, bool isFishStunned)
+		{
+			m_rodHelper.CrankController.SetSpeed(isReeling ? isFishStunned ? -10f : -2.5f : 0f, isFishStunned ? 0.15f : 0.25f);
 		}
 	}
 }
