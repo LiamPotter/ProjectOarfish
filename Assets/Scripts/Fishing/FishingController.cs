@@ -58,6 +58,8 @@ namespace Fishing
 		private Vector2 m_currentFishingInput = new();
 		private State m_currentState = State.Idle;
 		private bool m_hasReachedStartingDistance;
+		private FishGroupController[] m_fishGroups;
+		private FishGroupController m_activeFishGroup;
 
 
 		public State CurrentState
@@ -102,6 +104,26 @@ namespace Fishing
 			m_splashEffect = m_splashEffectParent.GetComponentInChildren<ParticleSystem>();
 			IsReeling = new FlipActionBool(false, ReelingFlipDetected);
 			IsFishStunned = new FlipActionBool(false, FishStunnedFlipDetected);
+			m_fishGroups = FindObjectsByType<FishGroupController>(FindObjectsSortMode.None);
+
+			m_rodHelper.BobberEnteredWater += OnBobberEnteredWater;
+		}
+
+		private void OnDestroy()
+		{
+			m_rodHelper.BobberEnteredWater -= OnBobberEnteredWater;
+		}
+
+		private void OnBobberEnteredWater()
+		{
+			m_activeFishGroup = SelectClosestFishGroup();
+
+			if (m_activeFishGroup == null)
+			{
+				return;
+			}
+			
+			m_activeFishGroup.SelectFishFromDistance(m_rodHelper.BobberTransform);
 		}
 
 		private void Update()
@@ -128,7 +150,7 @@ namespace Fishing
 				}
 				else
 				{
-					if (Input.GetMouseButtonDown(0))
+					if (m_activeFishGroup!= null && m_activeFishGroup.HasFishReachedTarget && Input.GetMouseButtonDown(0))
 					{
 						EnterFishingSequence(m_testFishConfig);
 					}
@@ -170,6 +192,7 @@ namespace Fishing
 
 		private void UpdateFishingSequence(float dt)
 		{
+			m_activeFishGroup.CurrentFish.transform.position = m_rodHelper.BobberTransform.position;
 			if (m_hasReachedStartingDistance == false)
 			{
 				m_currentFishTimer += dt;
@@ -312,6 +335,11 @@ namespace Fishing
 			m_rodHelper.ResetRodPosition();
 			m_rodHelper.CrankController.SetSpeed(0, 0.5f);
 			m_objectShaker.SetIntensity(0f);
+
+			foreach (var fishGroup in m_fishGroups)
+			{
+				fishGroup.ResetFish();
+			}
 		}
 
 		private void ReelingFlipDetected(bool newValue)
@@ -327,6 +355,34 @@ namespace Fishing
 		private void SetCrankSpeed(bool isReeling, bool isFishStunned)
 		{
 			m_rodHelper.CrankController.SetSpeed(isReeling ? isFishStunned ? -10f : -2.5f : 0f, isFishStunned ? 0.15f : 0.25f);
+		}
+
+		private FishGroupController SelectClosestFishGroup()
+		{
+			int bestFishGroupIndex = -1;
+			float closestFishGroupDistance = float.MaxValue;
+			for (int i = 0; i < m_fishGroups.Length; i++)
+			{
+				if (m_fishGroups[i].CanFishHere(m_rodHelper.BobberTransform) == false)
+				{
+					continue;
+				}
+				
+				float distance = math.distancesq(m_rodHelper.BobberTransform.position, m_fishGroups[i].transform.position);
+
+				if (distance < closestFishGroupDistance)
+				{
+					bestFishGroupIndex = i;
+					closestFishGroupDistance = distance;
+				}
+			}
+
+			if (bestFishGroupIndex == -1)
+			{
+				return null;
+			}
+			
+			return m_fishGroups[bestFishGroupIndex];
 		}
 	}
 }

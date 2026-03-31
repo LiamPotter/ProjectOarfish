@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 /// <summary>
 /// Simulates a fish swimming randomly within a defined radius.
@@ -36,11 +38,14 @@ public class FishSwimController : MonoBehaviour
     public bool drawGizmos = true;
 
     // ── Private state ──────────────────────────────────────────────
-    private Vector3 _targetPosition;
-    private float   _wanderTimer;
-    private float   _wanderInterval;
+    private bool m_wandering = true;
+    private Vector3 m_targetPosition;
+    private float   m_wanderTimer;
+    private float   m_wanderInterval;
+    private bool m_hasReachedTarget;
+    private float m_originalTurnSpeed;
 
-    // ── Unity Messages ─────────────────────────────────────────────
+    public Action ReachedTarget;
 
     private void Start()
     {
@@ -52,19 +57,23 @@ public class FishSwimController : MonoBehaviour
             areaCenter = pivot.transform;
         }
 
+        m_originalTurnSpeed = turnSpeed;
         PickNewTarget();
     }
 
     private void Update()
     {
-        // Count down to the next forced target pick.
-        _wanderTimer -= Time.deltaTime;
-        if (_wanderTimer <= 0f)
-            PickNewTarget();
+        if (m_wandering)
+        {
+            // Count down to the next forced target pick.
+            m_wanderTimer -= Time.deltaTime;
+            if (m_wanderTimer <= 0f)
+                PickNewTarget();
 
-        // If we are close enough to the current target, pick a new one early.
-        if (Vector3.Distance(transform.position, _targetPosition) < 0.3f)
-            PickNewTarget();
+            // If we are close enough to the current target, pick a new one early.
+            if (Vector3.Distance(transform.position, m_targetPosition) < 0.3f)
+                PickNewTarget();
+        }
 
         MoveTowardTarget();
     }
@@ -77,8 +86,8 @@ public class FishSwimController : MonoBehaviour
     /// </summary>
     private void PickNewTarget()
     {
-        _wanderInterval = Random.Range(minWanderInterval, maxWanderInterval);
-        _wanderTimer    = _wanderInterval;
+        m_wanderInterval = Random.Range(minWanderInterval, maxWanderInterval);
+        m_wanderTimer    = m_wanderInterval;
 
         // Random point inside a unit circle/sphere, then scale.
         Vector3 offset;
@@ -95,7 +104,7 @@ public class FishSwimController : MonoBehaviour
             offset = new Vector3(rnd.x, rnd.y, 0f);
         }
 
-        _targetPosition = areaCenter.position + offset;
+        m_targetPosition = areaCenter.position + offset;
     }
 
     /// <summary>
@@ -104,15 +113,22 @@ public class FishSwimController : MonoBehaviour
     /// </summary>
     private void MoveTowardTarget()
     {
-        Vector3 direction = (_targetPosition - transform.position);
+        Vector3 direction = (m_targetPosition - transform.position);
 
         if (use3D)
             direction.y = 0f; // Keep fish level on XZ plane.
         else
             direction.z = 0f; // Keep fish on XY plane.
 
-        if (direction.sqrMagnitude < 0.001f)
+        if (direction.sqrMagnitude < 0.001f || m_hasReachedTarget)
+        {
+            if (m_wandering == false && m_hasReachedTarget == false)
+            {
+                ReachedTarget?.Invoke();
+                m_hasReachedTarget = true;
+            }
             return;
+        }
 
         direction.Normalize();
 
@@ -128,7 +144,20 @@ public class FishSwimController : MonoBehaviour
         );
 
         // Always swim forward (along local forward / local right in 2D).
-        transform.position += transform.forward * swimSpeed * Time.deltaTime;
+        transform.position += transform.forward * (swimSpeed * Time.deltaTime);
+    }
+
+    public void SetWanderActive(bool isActive)
+    {
+        m_hasReachedTarget = false;
+        m_wandering = isActive;
+        turnSpeed = isActive ? m_originalTurnSpeed : m_originalTurnSpeed * 5f;
+    }
+
+    public void SetTarget(Vector3 targetPosition)
+    {
+        m_hasReachedTarget = false;
+        m_targetPosition = targetPosition;
     }
 
     // ── Gizmos ─────────────────────────────────────────────────────
@@ -147,8 +176,8 @@ public class FishSwimController : MonoBehaviour
         if (Application.isPlaying)
         {
             Gizmos.color = Color.yellow;
-            Gizmos.DrawSphere(_targetPosition, 0.15f);
-            Gizmos.DrawLine(transform.position, _targetPosition);
+            Gizmos.DrawSphere(m_targetPosition, 0.15f);
+            Gizmos.DrawLine(transform.position, m_targetPosition);
         }
     }
 

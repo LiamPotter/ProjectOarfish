@@ -62,6 +62,7 @@ namespace Fishing
 				m_rigidbody.linearVelocity = Vector3.zero;
 				m_rigidbody.angularVelocity = Vector3.zero;
 				m_inWater = true;
+				EnteredWater?.Invoke();
 			}
 
 

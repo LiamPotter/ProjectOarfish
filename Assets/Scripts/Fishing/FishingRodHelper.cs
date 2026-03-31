@@ -37,6 +37,8 @@ namespace Fishing
 			}
 		}
 
+		public Action BobberEnteredWater;
+
 		private void Start()
 		{
 			if (m_mainCamera == null)
@@ -60,6 +62,7 @@ namespace Fishing
 
 		private void OnWaterEntered()
 		{
+			BobberEnteredWater?.Invoke();	
 		}
 		
 		

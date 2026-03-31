@@ -307,10 +307,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2254607577042650296, guid: 02e9a04d6679bc34da3d9fcc98b9505b, type: 3}
-  - {fileID: 8548813591424519905, guid: 02e9a04d6679bc34da3d9fcc98b9505b, type: 3}
-  - {fileID: 4511221555074167223, guid: 02e9a04d6679bc34da3d9fcc98b9505b, type: 3}
-  - {fileID: -3651330418897345854, guid: 02e9a04d6679bc34da3d9fcc98b9505b, type: 3}
+  - {fileID: 2100000, guid: a7ff9010dfa3c1c4f82e152a6858226b, type: 2}
+  - {fileID: 2100000, guid: b091e2ec7cd16114dbe29c92df497540, type: 2}
+  - {fileID: 2100000, guid: a7ff9010dfa3c1c4f82e152a6858226b, type: 2}
+  - {fileID: 2100000, guid: b091e2ec7cd16114dbe29c92df497540, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -450,12 +450,15 @@ MonoBehaviour:
   m_rodAnimator: {fileID: 0}
   m_splashEffectPrefab: {fileID: 7271828082418525462, guid: eb2a05676df94ba48931b5cf25f6cc83, type: 3}
   m_testFishConfig: {fileID: 11400000, guid: c21a82a75c246ab4da4d16a2eaf12deb, type: 2}
-  m_reelForce: 0.2
-  m_sequenceCompleteDistance: 1
-  m_rodHealthLossPerSecond: 0.25
+  m_objectShaker: {fileID: 0}
+  m_reelForce: 1
+  m_sequenceCompleteDistance: 2
+  m_rodHealthLossPerSecondFromReeling: 0.25
+  m_rodHealthLossPerSecondFromAlignment: 0.15
   m_rodHealthGainPerSecond: 0.1
-  m_maxInputDelta: 20
-  m_minimumInputToFishAlignment: 0.75
+  m_maxInputDelta: 75
+  m_minimumInputToFishAlignment: 0.65
+  m_inputToFishAlignmentDamage: 0
   m_maxSequenceStartDuration: 2
   m_sequenceStartForce: 2
 --- !u!114 &9102151457648917762

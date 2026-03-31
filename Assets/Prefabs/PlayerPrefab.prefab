@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &401024821965930158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395935411573993722}
+  m_Layer: 0
+  m_Name: PlayerPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &395935411573993722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401024821965930158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.73, y: 0.416, z: -9.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1037311833076053561}
+  - {fileID: 2627504433542993215}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &656121622754131562
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 395935411573993722}
+    m_Modifications:
+    - target: {fileID: 1545904454347983094, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_Name
+      value: BoatCrest
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.111709595
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.32638
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03801918
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9914448
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.13052644
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_rodHelper
+      value: 
+      objectReference: {fileID: 2745192857671125839}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_boatCamera
+      value: 
+      objectReference: {fileID: 9167232481876539526}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_fishingLine
+      value: 
+      objectReference: {fileID: 564928934669895331}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_rodAnimator
+      value: 
+      objectReference: {fileID: 3767509866548045006}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_objectShaker
+      value: 
+      objectReference: {fileID: 7912158789100899355}
+    - target: {fileID: 5547802965981907798, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: boatCamera
+      value: 
+      objectReference: {fileID: 9167232481876539526}
+    - target: {fileID: 7356742157355145267, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: 'm_Materials.Array.data[3]'
+      value: 
+      objectReference: {fileID: -3651330418897345854, guid: 4930e2654c9d85c4a88a0160a3a6612e, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+--- !u!4 &2627504433542993215 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+  m_PrefabInstance: {fileID: 656121622754131562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3582049717267197951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4084479122024796565, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+  m_PrefabInstance: {fileID: 656121622754131562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3588879564473994468 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+  m_PrefabInstance: {fileID: 656121622754131562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8554a2d0a19dcfa438f9de048e46b31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishingController
+--- !u!1001 &3207925896014772490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 395935411573993722}
+    m_Modifications:
+    - target: {fileID: 764545166245753413, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_fishingController
+      value: 
+      objectReference: {fileID: 3588879564473994468}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.44771004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.79761994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.2790194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9933502
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.115132235
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -13.223
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3889162993735669928, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_fishingController
+      value: 
+      objectReference: {fileID: 3588879564473994468}
+    - target: {fileID: 6033797400476303756, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2627504433542993215}
+    - target: {fileID: 6033797400476303756, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: firstPersonAnchor
+      value: 
+      objectReference: {fileID: 3582049717267197951}
+    - target: {fileID: 8841880094848351638, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+      propertyPath: m_Name
+      value: Main Game Camera
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+--- !u!114 &564928934669895331 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3122067958582116265, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+  m_PrefabInstance: {fileID: 3207925896014772490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d0db2cd36dd854492af157e67d348b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishingLine
+--- !u!4 &1037311833076053561 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2513450625450250035, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+  m_PrefabInstance: {fileID: 3207925896014772490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2745192857671125839 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 764545166245753413, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+  m_PrefabInstance: {fileID: 3207925896014772490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10309ef990444dd8efa8d094ee6f071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fishing.FishingRodHelper
+--- !u!95 &3767509866548045006 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1786862354439118276, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+  m_PrefabInstance: {fileID: 3207925896014772490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7912158789100899355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4704420910686582033, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+  m_PrefabInstance: {fileID: 3207925896014772490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc1951f69d74f229a9e2ba6f49879c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectShaker
+--- !u!114 &9167232481876539526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6033797400476303756, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+  m_PrefabInstance: {fileID: 3207925896014772490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c199b9204cdeb439b6ddcd092ce1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoatCamera
