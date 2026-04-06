@@ -151,7 +151,7 @@ public class FishSwimController : MonoBehaviour
     {
         m_hasReachedTarget = false;
         m_wandering = isActive;
-        turnSpeed = isActive ? m_originalTurnSpeed : m_originalTurnSpeed * 5f;
+        turnSpeed = isActive ? m_originalTurnSpeed : m_originalTurnSpeed * 50f;
     }
 
     public void SetTarget(Vector3 targetPosition)

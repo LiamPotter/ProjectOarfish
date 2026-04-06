@@ -207,6 +207,7 @@ RectTransform:
   m_Children:
   - {fileID: 231810938665407260}
   - {fileID: 1045650342261677266}
+  - {fileID: 3705673447540887927}
   - {fileID: 4688179385268418032}
   m_Father: {fileID: 2513450625450250035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -293,7 +294,17 @@ MonoBehaviour:
   m_fishingController: {fileID: 0}
   m_idleUI: {fileID: 6207590927994698183}
   m_castUI: {fileID: 256020212874192425}
+  m_waitingForFishUI: {fileID: 8543861709709560135}
   m_fishingSequenceUI: {fileID: 6210322381336941903}
+  m_debugUIObjects:
+  - {fileID: 5575940662920414290}
+  - {fileID: 1054772705389844936}
+  - {fileID: 8538133583781467348}
+  - {fileID: 590918511408399908}
+  - {fileID: 2773507593736213757}
+  - {fileID: 5929037566073658229}
+  - {fileID: 7795562165406199736}
+  - {fileID: 6139342344460471624}
   m_castChargeBar: {fileID: 2295358811897669242}
   m_rodHealthBar: {fileID: 5991036141148566823}
   m_fullHealthColor: {r: 0, g: 0.65882355, b: 0.011764706, a: 1}
@@ -308,6 +319,145 @@ MonoBehaviour:
   m_fishInputAlignmentText: {fileID: 5188970730366978469}
   m_lastCatchNameText: {fileID: 4192735250285569467}
   m_lastCatchResultText: {fileID: 1176778493058068913}
+--- !u!1 &590918511408399908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1399046654021814636}
+  - component: {fileID: 7485224323572245347}
+  - component: {fileID: 7369376055318683127}
+  m_Layer: 0
+  m_Name: FishingControlsDebug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1399046654021814636
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590918511408399908}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4688179385268418032}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 718, y: -936.4873}
+  m_SizeDelta: {x: 1450.1735, y: -1872.9753}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!222 &7485224323572245347
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590918511408399908}
+  m_CullTransparentMesh: 1
+--- !u!114 &7369376055318683127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590918511408399908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '
+
+    U - Toggle Debug UI'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 77.8
+  m_fontSizeBase: 77.8
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1054772705389844936
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +495,145 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 192.07568}
   m_SizeDelta: {x: 1438.9559, y: 129.3503}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1119836129219285825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1902400162197822156}
+  - component: {fileID: 2057077959042917578}
+  - component: {fileID: 8049799828013588811}
+  m_Layer: 0
+  m_Name: FishingControls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1902400162197822156
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119836129219285825}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3705673447540887927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100.91504, y: -936.4878}
+  m_SizeDelta: {x: 1450.1735, y: -1872.9753}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!222 &2057077959042917578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119836129219285825}
+  m_CullTransparentMesh: 1
+--- !u!114 &8049799828013588811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119836129219285825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'LMB - Start Fishing Sequence
+
+    RMB - Cancel'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 77.8
+  m_fontSizeBase: 77.8
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1565056713150116376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,7 +2184,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LMB - Start Fishing Sequence
+  m_text: '
 
     RMB - Cancel'
   m_isRightToLeft: 0
@@ -2353,6 +2642,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1296918421515706104}
+  - {fileID: 1399046654021814636}
   - {fileID: 2238760695405590467}
   - {fileID: 982043319728188598}
   - {fileID: 2103033602143257510}
@@ -3131,6 +3421,42 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 364}
   m_SizeDelta: {x: 1438.9559, y: 129.3503}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &8543861709709560135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3705673447540887927}
+  m_Layer: 0
+  m_Name: WaitingForFish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3705673447540887927
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543861709709560135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000059417063}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1902400162197822156}
+  m_Father: {fileID: 2360921691425230813}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8841880094848351638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,50 +4046,6 @@ PrefabInstance:
       propertyPath: m_mainCamera
       value: 
       objectReference: {fileID: 3873549809767850724}
-    - target: {fileID: 1566886951735888879, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: <CrankController>k__BackingField.m_maxSpeed
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1566886951735888879, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: <CrankController>k__BackingField.m_minSpeed
-      value: -5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722908988135617174, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_debugDraw
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722908988135617174, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_fishForce
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722908988135617174, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_buoyancyCoeff
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722908988135617174, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_dragInWaterUp
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722908988135617174, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_dragInWaterRight
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722908988135617174, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_bobberFloatOffset
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722908988135617174, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_dragInWaterForward
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778897095202833923, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: debugDraw
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778897095202833923, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5379117829961871909, guid: 7fce2c512bbdf974ca1a8ee4c5f555cb, type: 3}
       propertyPath: m_Name
       value: FishingRodTempModel

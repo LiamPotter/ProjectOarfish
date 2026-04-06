@@ -105,6 +105,10 @@ PrefabInstance:
       propertyPath: m_objectShaker
       value: 
       objectReference: {fileID: 7912158789100899355}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_boatController
+      value: 
+      objectReference: {fileID: 8595777006908588904}
     - target: {fileID: 5547802965981907798, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
       propertyPath: boatCamera
       value: 
@@ -113,6 +117,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[3]'
       value: 
       objectReference: {fileID: -3651330418897345854, guid: 4930e2654c9d85c4a88a0160a3a6612e, type: 3}
+    - target: {fileID: 9102151457648917762, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_movementEnabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139,6 +147,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8554a2d0a19dcfa438f9de048e46b31d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingController
+--- !u!114 &8595777006908588904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9102151457648917762, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+  m_PrefabInstance: {fileID: 656121622754131562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb499a376b0c094f92b8f70c0966934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3207925896014772490
 PrefabInstance:
   m_ObjectHideFlags: 0

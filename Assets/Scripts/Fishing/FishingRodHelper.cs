@@ -81,7 +81,7 @@ namespace Fishing
 		{
 			m_chargeTimer += dt;
 		}
-
+		
 		public void ThrowBobber()
 		{
 			float force = math.lerp(m_throwForceRange.x, m_throwForceRange.y, ChargeCompletion);

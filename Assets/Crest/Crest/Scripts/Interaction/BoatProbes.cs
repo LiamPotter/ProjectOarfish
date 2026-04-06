@@ -51,7 +51,7 @@ namespace Crest
         public float _dragInWaterRight = 2f;
         public float _dragInWaterForward = 1f;
 
-        [Header("Control")]
+        [Header("Control")] [SerializeField] private bool m_movementEnabled = true;
         [FormerlySerializedAs("EnginePower")]
         public float _enginePower = 7;
         [FormerlySerializedAs("TurnPower")]
@@ -83,6 +83,12 @@ namespace Crest
 
         public override float ObjectWidth => _minSpatialLength;
         public override bool InWater => true;
+
+        public bool MovementEnabled
+        {
+            get => m_movementEnabled;
+            set => m_movementEnabled = value;
+        }
 
         float _totalWeight;
 
@@ -177,6 +183,10 @@ namespace Crest
 
         void FixedUpdateEngine()
         {
+            if (MovementEnabled == false)
+            {
+                return;
+            }
             var forcePosition = _rb.worldCenterOfMass;
 
             var forward = _engineBias;

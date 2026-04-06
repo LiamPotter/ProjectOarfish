@@ -218,7 +218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1668427522}
+  - {fileID: 80958647}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -250,6 +250,62 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5725354}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &8202464
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &9298407
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &13457656
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +406,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 492041756}
+  - {fileID: 1038977622}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -382,7 +438,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13457656}
   m_Mesh: {fileID: 4300000, guid: d8259e38270df8b4ca2776331e95fbd3, type: 2}
---- !u!21 &28651006
+--- !u!21 &18318469
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -410,7 +466,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &29276387
+--- !u!21 &68100053
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -438,127 +494,6 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &36397913
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!1001 &49468056
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 79076265}
-    m_Modifications:
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434487251447330173, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_Name
-      value: FishObj (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: areaCenter
-      value: 
-      objectReference: {fileID: 79076265}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: swimRadius
-      value: 3.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
---- !u!4 &49468057 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 49468056}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &49468058 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8916513371279087600, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 49468056}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ccf5317828478698aa79840a843052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Fishing.Fish.FishBrain
 --- !u!1 &68206370
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +716,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1320037730}
+  - {fileID: 1297931421}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -813,7 +748,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77176943}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &78223305
+--- !u!21 &80958647
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -841,63 +776,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!1 &79076264
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 79076265}
-  - component: {fileID: 79076266}
-  m_Layer: 0
-  m_Name: FishOutside
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &79076265
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79076264}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.86, y: 0.16, z: -17.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 281341243}
-  - {fileID: 1725011511}
-  - {fileID: 1429633500}
-  - {fileID: 49468057}
-  - {fileID: 1581581507}
-  m_Father: {fileID: 1949535253}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &79076266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79076264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57dac3049e8d9404dbec985eae31c0e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FishGroupController
-  <MinDistanceToFish>k__BackingField: 10
-  m_fishes:
-  - {fileID: 281341244}
-  - {fileID: 1725011512}
-  - {fileID: 1429633501}
-  - {fileID: 49468058}
-  - {fileID: 1581581508}
---- !u!21 &85916093
+--- !u!21 &118012636
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -925,63 +804,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &90308706
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &106968531
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &124387804
+--- !u!21 &122391293
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1166,7 +989,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 283805804}
+  - {fileID: 2008275458}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1198,7 +1021,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163571805}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &190671265
+--- !u!21 &198837271
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1226,7 +1049,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &212692534
+--- !u!21 &215580353
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1254,35 +1077,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &219492313
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &221625640
+--- !u!21 &220096129
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1479,34 +1274,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238513637}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &243592848
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &252340374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1400,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 678316a8aed2f8142ac07585146df3b0, type: 3}
---- !u!21 &262042276
+--- !u!21 &264539115
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1661,7 +1428,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &262146521
+--- !u!21 &269175497
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1689,7 +1456,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &263295102
+--- !u!21 &270998172
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1816,7 +1583,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1090361692}
+  - {fileID: 994729777}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1848,172 +1615,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277611782}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &278988563
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!1001 &281341242
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 79076265}
-    m_Modifications:
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434487251447330173, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_Name
-      value: FishObj
-      objectReference: {fileID: 0}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: areaCenter
-      value: 
-      objectReference: {fileID: 79076265}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: swimRadius
-      value: 3.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
---- !u!4 &281341243 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 281341242}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &281341244 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8916513371279087600, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 281341242}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ccf5317828478698aa79840a843052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Fishing.Fish.FishBrain
---- !u!21 &283805804
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &290709952
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &291768353
+--- !u!21 &297811605
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2046,63 +1648,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3290797193238313999, guid: b3c8fa66687e5274da97ab934765e942, type: 3}
   m_PrefabInstance: {fileID: 546143851}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &311377507
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &329498042
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &334059482
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2229,7 +1775,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1979038234}
+  - {fileID: 1624288108}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2261,7 +1807,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334653468}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &337971919
+--- !u!21 &361356522
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2446,7 +1992,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 992276456}
+  - {fileID: 1124085807}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2478,7 +2024,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374522772}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &380802428
+--- !u!21 &409274190
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2506,7 +2052,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &401053083
+--- !u!21 &410783378
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2868,7 +2414,35 @@ MonoBehaviour:
   _dragInWaterForward: 1
   _dragInWaterRotational: 0.2
   _debugDraw: 0
---- !u!21 &473984098
+--- !u!21 &449427095
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &481279389
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2924,35 +2498,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &492041756
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &535460639
+--- !u!21 &533718357
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3371,7 +2917,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1313854405}
+  - {fileID: 1481438792}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3403,7 +2949,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562468735}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &566798243
+--- !u!21 &574717492
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3530,7 +3076,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 212692534}
+  - {fileID: 896535955}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3680,6 +3226,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3290797194272842203, guid: b3c8fa66687e5274da97ab934765e942, type: 3}
   m_PrefabInstance: {fileID: 546143851}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &613418721
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &622307928
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,6 +3319,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &623034830
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &626127814
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,7 +3446,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 106968531}
+  - {fileID: 2140093217}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3876,279 +3478,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626127814}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &672330497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 672330498}
-  - component: {fileID: 672330502}
-  - component: {fileID: 672330501}
-  - component: {fileID: 672330500}
-  - component: {fileID: 672330499}
-  m_Layer: 0
-  m_Name: Depth
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &672330498
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672330497}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1199614744}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &672330499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672330497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfad533f4c23e4346a6eb03e931a7e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Crest::Crest.RegisterSeaFloorDepthInput
-  _checkShaderName: 1
-  _checkShaderPasses: 1
-  _disableRenderer: 1
-  _version: 0
-  _assignOceanDepthMaterial: 1
-  _relative: 0
---- !u!65 &672330500
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672330497}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &672330501
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672330497}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 1155027516}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &672330502
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672330497}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &692895735
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!1 &720543664
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 720543665}
-  - component: {fileID: 720543668}
-  - component: {fileID: 720543667}
-  - component: {fileID: 720543666}
-  m_Layer: 0
-  m_Name: Floor (14)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &720543665
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720543664}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.09229599, y: 0.7010574, z: 0.09229599, w: 0.7010574}
-  m_LocalPosition: {x: 8.84, y: 0.06, z: 33.22}
-  m_LocalScale: {x: 13.292866, y: 2.5558, z: 14.397096}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1480480948}
-  m_Father: {fileID: 1949535253}
-  m_LocalEulerAnglesHint: {x: -15, y: 90, z: 0}
---- !u!65 &720543666
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720543664}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &720543667
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720543664}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &720543668
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720543664}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &723371077
+--- !u!21 &695613892
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -4353,29 +3683,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746540427}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &753938932
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091355054}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d8259e38270df8b4ca2776331e95fbd3, type: 2}
---- !u!21 &760067129
+--- !u!21 &753691696
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -4403,6 +3711,28 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
+--- !u!64 &753938932
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091355054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d8259e38270df8b4ca2776331e95fbd3, type: 2}
 --- !u!1 &776680819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4468,34 +3798,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &779466430
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &783071448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,7 +3897,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 882537976}
+  - {fileID: 1756050508}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4806,34 +4108,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &787473245
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &789785277
 GameObject:
   m_ObjectHideFlags: 0
@@ -4933,7 +4207,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1551263937}
+  - {fileID: 1924687191}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4965,7 +4239,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789785277}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &793555578
+--- !u!21 &794211089
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5092,7 +4366,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 380802428}
+  - {fileID: 1034071526}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5124,34 +4398,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807549789}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &812710029
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &815434767
 GameObject:
   m_ObjectHideFlags: 0
@@ -5239,7 +4485,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 23eff93c80770ca4ba195f0516881f8f, type: 2}
---- !u!21 &828050301
+--- !u!21 &834548250
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5267,7 +4513,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &839236129
+--- !u!21 &849985323
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5295,7 +4541,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &857415368
+--- !u!21 &870152196
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5323,7 +4569,91 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &882537976
+--- !u!21 &875868272
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &882653132
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &892292291
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &896535955
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5564,7 +4894,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 839236129}
+  - {fileID: 623034830}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5654,7 +4984,7 @@ MonoBehaviour:
   _maxSpeed: 100
   _warnOnSpeedClamp: 0
   _debugSubsteps: 0
---- !u!21 &914427681
+--- !u!21 &910902619
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5682,7 +5012,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &917763612
+--- !u!21 &919448875
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5715,90 +5045,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3290797192797774897, guid: b3c8fa66687e5274da97ab934765e942, type: 3}
   m_PrefabInstance: {fileID: 546143851}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &935584604
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &935882726
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &938243776
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &942984933
 GameObject:
   m_ObjectHideFlags: 0
@@ -5898,7 +5144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 85916093}
+  - {fileID: 1674829707}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6425,7 +5671,7 @@ MonoBehaviour:
   _dragInWaterForward: 1
   _dragInWaterRotational: 0.2
   _debugDraw: 0
---- !u!21 &992276456
+--- !u!21 &994729777
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -6453,7 +5699,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1001141124
+--- !u!21 &1010188670
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -6481,7 +5727,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1019726581
+--- !u!21 &1017547286
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -6509,7 +5755,91 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1049251924
+--- !u!21 &1032344048
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1034071526
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1038977622
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1053605490
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -6651,7 +5981,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5000001, y: 1.747473, z: 0.5000002}
   m_Center: {x: -0.0000004908729, y: 0.87373644, z: -0.00000035661182}
---- !u!21 &1066818872
+--- !u!21 &1072349841
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -6679,7 +6009,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1089023319
+--- !u!21 &1080132971
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -6707,7 +6037,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1090361692
+--- !u!21 &1087269934
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -7112,7 +6442,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5000001, y: 1.747473, z: 0.5000002}
   m_Center: {x: -0.0000004908729, y: 0.87373644, z: -0.00000035661182}
---- !u!21 &1108971615
+--- !u!21 &1108871969
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -7140,7 +6470,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1132375861
+--- !u!21 &1124085807
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -7282,7 +6612,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.0000045, y: 2.1861258, z: 0.26336852}
   m_Center: {x: -1.5000025, y: 1.0930626, z: -0.12571763}
---- !u!21 &1155027516
+--- !u!21 &1144129538
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1159815226
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -7410,7 +6768,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1132375861}
+  - {fileID: 2102163114}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7442,147 +6800,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186196682}
   m_Mesh: {fileID: 4300000, guid: d8259e38270df8b4ca2776331e95fbd3, type: 2}
---- !u!1 &1199614743
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1199614744}
-  - component: {fileID: 1199614747}
-  - component: {fileID: 1199614746}
-  - component: {fileID: 1199614745}
-  m_Layer: 0
-  m_Name: Floor (15)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1199614744
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199614743}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 71.3058, y: 2.8971, z: 45.8353}
-  m_LocalScale: {x: 12.067938, y: 2.4539342, z: 51.54641}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 672330498}
-  m_Father: {fileID: 1949535253}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1199614745
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199614743}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1199614746
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199614743}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1199614747
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199614743}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1199969566
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1203045408
 GameObject:
   m_ObjectHideFlags: 0
@@ -7682,7 +6899,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1430172270}
+  - {fileID: 269175497}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7779,7 +6996,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1230266421
+--- !u!21 &1231164363
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1239542561
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1280105895
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!4 &1286160706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3754502737633598280, guid: ff7998ba2661f3a44b26193415f7d672, type: 3}
+  m_PrefabInstance: {fileID: 8228912489896070216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!21 &1297931421
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -7974,7 +7280,7 @@ MonoBehaviour:
   _dragInWaterForward: 1
   _dragInWaterRotational: 0.2
   _debugDraw: 0
---- !u!21 &1303141182
+--- !u!21 &1300624852
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -8002,91 +7308,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1313854405
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &1317411981
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &1320037730
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &1339929435
+--- !u!21 &1301438937
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -8197,6 +7419,34 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1403312430}
   m_SourcePrefab: {fileID: 100100000, guid: 5c062eed01c5725478e829f224cbe54f, type: 3}
+--- !u!21 &1385908778
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1001 &1403230066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8276,7 +7526,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 07df54d1ddd27fb4982f144764d3317f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 90308706}
+      objectReference: {fileID: 1889307918}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 100002, guid: 07df54d1ddd27fb4982f144764d3317f, type: 3}
@@ -8468,7 +7718,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1872054720}
+  - {fileID: 1108871969}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8500,100 +7750,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404149595}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1429633499
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 79076265}
-    m_Modifications:
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434487251447330173, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_Name
-      value: FishObj (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: areaCenter
-      value: 
-      objectReference: {fileID: 79076265}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: swimRadius
-      value: 3.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
---- !u!4 &1429633500 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 1429633499}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1429633501 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8916513371279087600, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 1429633499}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ccf5317828478698aa79840a843052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Fishing.Fish.FishBrain
---- !u!21 &1430172270
+--- !u!21 &1409853104
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -8720,7 +7877,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1549776027}
+  - {fileID: 794211089}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8752,7 +7909,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440762473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1451107974
+--- !u!21 &1449209235
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -8780,7 +7937,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1477412687
+--- !u!21 &1480888195
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -8808,138 +7965,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!1 &1480480947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1480480948}
-  - component: {fileID: 1480480952}
-  - component: {fileID: 1480480951}
-  - component: {fileID: 1480480950}
-  - component: {fileID: 1480480949}
-  m_Layer: 0
-  m_Name: Depth
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1480480948
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480480947}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 720543665}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1480480949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480480947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfad533f4c23e4346a6eb03e931a7e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Crest::Crest.RegisterSeaFloorDepthInput
-  _checkShaderName: 1
-  _checkShaderPasses: 1
-  _disableRenderer: 1
-  _version: 0
-  _assignOceanDepthMaterial: 1
-  _relative: 0
---- !u!65 &1480480950
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480480947}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1480480951
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480480947}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 1609841291}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1480480952
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480480947}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1493280093
+--- !u!21 &1481438792
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9066,7 +8092,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 914427681}
+  - {fileID: 1087269934}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9098,7 +8124,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503514493}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1505479419
+--- !u!21 &1507157786
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1517524475
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9420,7 +8474,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526637926}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1534179093
+--- !u!21 &1546250226
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9585,7 +8639,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 07df54d1ddd27fb4982f144764d3317f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 36397913}
+      objectReference: {fileID: 1984755413}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9646,35 +8700,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.0000045, y: 2.1861258, z: 0.26336852}
   m_Center: {x: -1.5000025, y: 1.0930626, z: -0.12571763}
---- !u!21 &1549776027
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &1551263937
+--- !u!21 &1555047745
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9724,100 +8750,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 23eff93c80770ca4ba195f0516881f8f, type: 2}
---- !u!1001 &1581581506
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 79076265}
-    m_Modifications:
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434487251447330173, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_Name
-      value: FishObj (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: areaCenter
-      value: 
-      objectReference: {fileID: 79076265}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: swimRadius
-      value: 3.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
---- !u!4 &1581581507 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 1581581506}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1581581508 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8916513371279087600, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 1581581506}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ccf5317828478698aa79840a843052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Fishing.Fish.FishBrain
---- !u!21 &1609841291
+--- !u!21 &1572451234
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9845,7 +8778,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1616900086
+--- !u!21 &1618513143
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9873,7 +8806,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1668427522
+--- !u!21 &1624288108
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9901,7 +8834,147 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1696889670
+--- !u!21 &1633757934
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1657048951
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1674829707
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1684259782
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1692346122
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1694685926
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -9994,7 +9067,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1710538865
+--- !u!21 &1707696397
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -10136,7 +9209,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5000001, y: 1.747473, z: 0.5000002}
   m_Center: {x: -0.0000004908729, y: 0.87373644, z: -0.00000035661182}
---- !u!21 &1719461057
+--- !u!21 &1756050508
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -10164,100 +9237,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!1001 &1725011510
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 79076265}
-    m_Modifications:
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.463
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4434487251447330173, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_Name
-      value: FishObj (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6178909902329285534, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: areaCenter
-      value: 
-      objectReference: {fileID: 79076265}
-    - target: {fileID: 6807888952898616366, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-      propertyPath: swimRadius
-      value: 3.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
---- !u!4 &1725011511 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4402738721502209025, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 1725011510}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1725011512 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8916513371279087600, guid: ba8a34f44f53fe240b9a82745233f2cc, type: 3}
-  m_PrefabInstance: {fileID: 1725011510}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69ccf5317828478698aa79840a843052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Fishing.Fish.FishBrain
---- !u!21 &1788203975
+--- !u!21 &1785383205
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -10350,34 +9330,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1798394211
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1815687846
 GameObject:
   m_ObjectHideFlags: 0
@@ -10477,7 +9429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 290709952}
+  - {fileID: 2030169121}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10676,7 +9628,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817851763}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1827833958
+--- !u!21 &1833790159
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -10704,7 +9656,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1856195355
+--- !u!21 &1838721935
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -10732,7 +9684,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1872054720
+--- !u!21 &1889307918
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -10760,7 +9712,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1874779417
+--- !u!21 &1893873217
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -10846,34 +9798,6 @@ MonoBehaviour:
   _maxSpeed: 100
   _warnOnSpeedClamp: 0
   _debugSubsteps: 0
---- !u!21 &1897166787
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1897340195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10991,7 +9915,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5000001, y: 1.747473, z: 0.5000002}
   m_Center: {x: -0.0000004908729, y: 0.87373644, z: -0.00000035661182}
---- !u!21 &1915927222
+--- !u!21 &1900147370
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1905186935
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -11133,6 +10085,118 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5000001, y: 1.747473, z: 0.5000002}
   m_Center: {x: -0.0000004908729, y: 0.87373644, z: -0.00000035661182}
+--- !u!21 &1919050306
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1924687191
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1925651244
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1929390751
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1001 &1930792217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11342,6 +10406,134 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1940370279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940370280}
+  - component: {fileID: 1940370282}
+  - component: {fileID: 1940370281}
+  m_Layer: 0
+  m_Name: DepthCacheCam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1940370280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940370279}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 100, z: 0}
+  m_LocalScale: {x: 0.04, y: 1, z: 0.04}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1286160706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1940370281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940370279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 0
+  m_RequiresDepthTextureOption: 0
+  m_RequiresOpaqueTextureOption: 0
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 0
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!20 &1940370282
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940370279}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 10000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 12.5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 2141001152}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &1945530989
 GameObject:
   m_ObjectHideFlags: 0
@@ -11511,11 +10703,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945530989}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1949535253 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1687481656991496645, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-  m_PrefabInstance: {fileID: 2453792185343331026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1951057454
 GameObject:
   m_ObjectHideFlags: 0
@@ -11585,34 +10772,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d8259e38270df8b4ca2776331e95fbd3, type: 2}
---- !u!21 &1956617146
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1957946342
 GameObject:
   m_ObjectHideFlags: 0
@@ -11934,6 +11093,34 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5d9ddeece2ecd3b4baa2eea5165e12a6, type: 2}
+--- !u!21 &1963868547
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1969945199
 GameObject:
   m_ObjectHideFlags: 0
@@ -11992,7 +11179,7 @@ MonoBehaviour:
   _maxSpeed: 100
   _warnOnSpeedClamp: 0
   _debugSubsteps: 0
---- !u!21 &1979038234
+--- !u!21 &1984755413
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12020,7 +11207,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1980590060
+--- !u!21 &2008275458
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12048,7 +11235,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &1997816238
+--- !u!21 &2030169121
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12076,7 +11263,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &2001132668
+--- !u!21 &2037652048
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12104,7 +11291,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &2020099208
+--- !u!21 &2093431284
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12132,7 +11319,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &2023267272
+--- !u!21 &2096404605
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12160,91 +11347,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!21 &2034468775
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &2044123226
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &2067548363
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
-  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &2084570361
+--- !u!21 &2102163114
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12372,7 +11475,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1997816238}
+  - {fileID: 834548250}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12503,7 +11606,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 278988563}
+  - {fileID: 1694685926}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12600,7 +11703,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &2134095915
+--- !u!21 &2134434159
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -12628,6 +11731,71 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
+--- !u!21 &2140093217
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crest/Inputs/Depth/Ocean Depth From Geometry
+  m_Shader: {fileID: 4800000, guid: 68ba10198e0331d4f83248b7e52b6e72, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!84 &2141001152
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OceanFloorControl_oceanDepth_DepthOnly
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1001 &2453792185343331026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12639,11 +11807,11 @@ PrefabInstance:
     - target: {fileID: 88111991274781834, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 760067129}
+      objectReference: {fileID: 1409853104}
     - target: {fileID: 380184010305780570, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1956617146}
+      objectReference: {fileID: 613418721}
     - target: {fileID: 475354764901422741, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12651,47 +11819,19 @@ PrefabInstance:
     - target: {fileID: 486718154228069690, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 29276387}
-    - target: {fileID: 577662186252196168, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 882653132}
     - target: {fileID: 625278283671457193, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 857415368}
+      objectReference: {fileID: 1684259782}
     - target: {fileID: 644019758671748371, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 935882726}
-    - target: {fileID: 822692397495182617, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 14.296811
-      objectReference: {fileID: 0}
-    - target: {fileID: 822692397495182617, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.4539342
-      objectReference: {fileID: 0}
-    - target: {fileID: 822692397495182617, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 78.87633
-      objectReference: {fileID: 0}
-    - target: {fileID: 822692397495182617, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 57.6418
-      objectReference: {fileID: 0}
-    - target: {fileID: 822692397495182617, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 822692397495182617, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 33.3023
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9298407}
     - target: {fileID: 1083208701963787166, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2044123226}
+      objectReference: {fileID: 870152196}
     - target: {fileID: 1687481656991496645, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.8
@@ -12735,15 +11875,15 @@ PrefabInstance:
     - target: {fileID: 1709117570096967300, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1719461057}
+      objectReference: {fileID: 220096129}
     - target: {fileID: 1879066474282551552, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 473984098}
+      objectReference: {fileID: 910902619}
     - target: {fileID: 1917619004029275900, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 78223305}
+      objectReference: {fileID: 1231164363}
     - target: {fileID: 1922796324026582653, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12751,7 +11891,7 @@ PrefabInstance:
     - target: {fileID: 2039478771258260503, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 262042276}
+      objectReference: {fileID: 1517524475}
     - target: {fileID: 2046006826331470434, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12759,31 +11899,27 @@ PrefabInstance:
     - target: {fileID: 2133477305989186292, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 535460639}
+      objectReference: {fileID: 1925651244}
     - target: {fileID: 2170183502730781293, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1616900086}
+      objectReference: {fileID: 1929390751}
     - target: {fileID: 2269496186917948004, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 723371077}
+      objectReference: {fileID: 1300624852}
     - target: {fileID: 2432773017442269274, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 263295102}
-    - target: {fileID: 2462403358237957764, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.27
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 409274190}
     - target: {fileID: 2664239507063329925, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 28651006}
+      objectReference: {fileID: 1618513143}
     - target: {fileID: 2767219540138842367, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1874779417}
+      objectReference: {fileID: 919448875}
     - target: {fileID: 2799017341464772344, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12791,23 +11927,19 @@ PrefabInstance:
     - target: {fileID: 2844674445136202601, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1108971615}
+      objectReference: {fileID: 1838721935}
     - target: {fileID: 2853215361503733534, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1303141182}
+      objectReference: {fileID: 533718357}
     - target: {fileID: 2906746603197697935, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1199969566}
-    - target: {fileID: 2912304385354458957, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.3
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1919050306}
     - target: {fileID: 3121517309649611879, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2067548363}
+      objectReference: {fileID: 1301438937}
     - target: {fileID: 3186631331307110412, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12815,11 +11947,15 @@ PrefabInstance:
     - target: {fileID: 3288245071652204792, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1696889670}
+      objectReference: {fileID: 1239542561}
+    - target: {fileID: 3377371379997647154, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 410783378}
     - target: {fileID: 3398220712984957361, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 812710029}
+      objectReference: {fileID: 1080132971}
     - target: {fileID: 3453250950699795281, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12827,111 +11963,75 @@ PrefabInstance:
     - target: {fileID: 3475601604600281844, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1230266421}
+      objectReference: {fileID: 118012636}
     - target: {fileID: 3534079314011285495, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1798394211}
+      objectReference: {fileID: 1546250226}
     - target: {fileID: 3591187083001557713, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 219492313}
-    - target: {fileID: 3613059573140153706, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3613059573140153706, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.05
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1555047745}
     - target: {fileID: 3650674038886326097, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 124387804}
+      objectReference: {fileID: 1480888195}
     - target: {fileID: 3689762725418338291, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 787473245}
+      objectReference: {fileID: 8202464}
     - target: {fileID: 3901802278902624128, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 190671265}
+      objectReference: {fileID: 1144129538}
     - target: {fileID: 4304025236289652177, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1980590060}
+      objectReference: {fileID: 1159815226}
     - target: {fileID: 4344874493043427012, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 566798243}
+      objectReference: {fileID: 574717492}
     - target: {fileID: 4362041807859341332, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 938243776}
-    - target: {fileID: 4408909203086683638, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.27
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 264539115}
     - target: {fileID: 4487736672554033638, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2020099208}
+      objectReference: {fileID: 2037652048}
     - target: {fileID: 4653081096681113919, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 337971919}
+      objectReference: {fileID: 695613892}
     - target: {fileID: 4712821219919460856, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2023267272}
+      objectReference: {fileID: 1833790159}
     - target: {fileID: 4759171876441547818, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2084570361}
-    - target: {fileID: 4958708293779993513, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4958708293779993513, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4958708293779993513, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.006
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1017547286}
     - target: {fileID: 5016770250724597349, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2134095915}
+      objectReference: {fileID: 1449209235}
     - target: {fileID: 5030338952761743018, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 221625640}
+      objectReference: {fileID: 1010188670}
     - target: {fileID: 5056229536430141297, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1089023319}
+      objectReference: {fileID: 361356522}
     - target: {fileID: 5100294172185860345, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1710538865}
-    - target: {fileID: 5122461064111430099, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -28.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 5122461064111430099, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 5122461064111430099, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 35.49
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 68100053}
     - target: {fileID: 5166361625338330654, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 311377507}
+      objectReference: {fileID: 849985323}
     - target: {fileID: 5209030913116463730, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12939,55 +12039,31 @@ PrefabInstance:
     - target: {fileID: 5258787132855465592, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1317411981}
+      objectReference: {fileID: 1963868547}
     - target: {fileID: 5311605201553237601, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 334059482}
+      objectReference: {fileID: 1900147370}
     - target: {fileID: 5418047822163475618, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1339929435}
+      objectReference: {fileID: 198837271}
     - target: {fileID: 5434975492189568274, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 692895735}
+      objectReference: {fileID: 270998172}
     - target: {fileID: 5616977860804032783, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 779466430}
-    - target: {fileID: 5730878979364684757, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -23.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730878979364684757, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730878979364684757, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 37.59
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 875868272}
     - target: {fileID: 5881978001832138302, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1001141124}
-    - target: {fileID: 5936140450141217831, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 5936140450141217831, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 5936140450141217831, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 34.38
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 297811605}
     - target: {fileID: 6020666214610579327, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1493280093}
+      objectReference: {fileID: 1572451234}
     - target: {fileID: 6035168494040095875, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12995,7 +12071,7 @@ PrefabInstance:
     - target: {fileID: 6150693620349852201, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1451107974}
+      objectReference: {fileID: 1072349841}
     - target: {fileID: 6200506878598477433, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13003,7 +12079,7 @@ PrefabInstance:
     - target: {fileID: 6388063154871094905, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2001132668}
+      objectReference: {fileID: 1280105895}
     - target: {fileID: 6602488619474466202, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13011,43 +12087,43 @@ PrefabInstance:
     - target: {fileID: 6663737519091032126, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1505479419}
+      objectReference: {fileID: 481279389}
     - target: {fileID: 6791859357860236878, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 935584604}
+      objectReference: {fileID: 1707696397}
     - target: {fileID: 6954876552889690643, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1897166787}
+      objectReference: {fileID: 1785383205}
     - target: {fileID: 6974822869752151685, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1019726581}
+      objectReference: {fileID: 1893873217}
     - target: {fileID: 7135158606853984675, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 243592848}
+      objectReference: {fileID: 215580353}
     - target: {fileID: 7246343486772721467, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1477412687}
+      objectReference: {fileID: 1633757934}
     - target: {fileID: 7340955616594670664, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1066818872}
+      objectReference: {fileID: 2096404605}
     - target: {fileID: 7676360862059986600, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1788203975}
+      objectReference: {fileID: 449427095}
     - target: {fileID: 7839958004361569795, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1534179093}
+      objectReference: {fileID: 1905186935}
     - target: {fileID: 8018238321281232213, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 291768353}
+      objectReference: {fileID: 1053605490}
     - target: {fileID: 8201060887664056601, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13059,55 +12135,50 @@ PrefabInstance:
     - target: {fileID: 8279504100533147138, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2034468775}
+      objectReference: {fileID: 2134434159}
     - target: {fileID: 8351980828022342091, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 262146521}
+      objectReference: {fileID: 2093431284}
+    - target: {fileID: 8418721714101461469, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1692346122}
     - target: {fileID: 8467152926815043996, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1915927222}
+      objectReference: {fileID: 1657048951}
     - target: {fileID: 8561385884010422312, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1049251924}
+      objectReference: {fileID: 18318469}
     - target: {fileID: 8601981525159121102, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 917763612}
+      objectReference: {fileID: 892292291}
     - target: {fileID: 8625117339071402853, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1827833958}
+      objectReference: {fileID: 1032344048}
     - target: {fileID: 8796550305286259321, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 793555578}
+      objectReference: {fileID: 753691696}
     - target: {fileID: 8817737489808503396, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 401053083}
+      objectReference: {fileID: 1385908778}
     - target: {fileID: 8996144863023693102, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 828050301}
+      objectReference: {fileID: 1507157786}
     - target: {fileID: 9025584715016884271, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 481650195}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1687481656991496645, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      insertIndex: 87
-      addedObject: {fileID: 720543665}
-    - targetCorrespondingSourceObject: {fileID: 1687481656991496645, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      insertIndex: 90
-      addedObject: {fileID: 1199614744}
-    - targetCorrespondingSourceObject: {fileID: 1687481656991496645, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
-      insertIndex: 100
-      addedObject: {fileID: 79076265}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61e29ee2cef32b84b8dbe9b62672c4fb, type: 3}
 --- !u!1001 &8025452505913998198
@@ -13230,7 +12301,7 @@ PrefabInstance:
     - target: {fileID: 2590383111707773089, guid: ff7998ba2661f3a44b26193415f7d672, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 1856195355}
+      objectReference: {fileID: 122391293}
     - target: {fileID: 6674634255958176671, guid: ff7998ba2661f3a44b26193415f7d672, type: 3}
       propertyPath: m_Name
       value: CrestOceanStylized
@@ -13241,7 +12312,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3754502737633598280, guid: ff7998ba2661f3a44b26193415f7d672, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1940370280}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff7998ba2661f3a44b26193415f7d672, type: 3}
 --- !u!1660057539 &9223372036854775807

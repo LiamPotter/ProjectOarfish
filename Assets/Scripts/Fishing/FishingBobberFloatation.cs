@@ -9,7 +9,6 @@ namespace Fishing
 	{
 		[SerializeField] private float m_bobberFloatationWidth = 2f;
 		[SerializeField] private float m_bobberFloatOffset = 0.1f;
-		[SerializeField] private float m_fishForce = 0.1f;
 
 		[Tooltip("Strength of buoyancy force per meter of submersion in water.")] [SerializeField]
 		private float m_buoyancyCoeff = 3f;
@@ -30,7 +29,6 @@ namespace Fishing
 		private Vector3 m_inputVelocity = Vector3.zero;
 		private Vector3 m_displacement;
 		private float m_height;
-		private Vector2 m_fishForceVector;
 		private Camera m_camera;
 
 		public Action EnteredWater;
