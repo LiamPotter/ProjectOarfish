@@ -33,6 +33,37 @@ Transform:
   - {fileID: 2627504433542993215}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8900440660303399004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6723378560098376337}
+  m_Layer: 0
+  m_Name: FishingRodInactivePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6723378560098376337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8900440660303399004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.3205261, y: -0.59225553, z: -0.38630745, w: 0.63028806}
+  m_LocalPosition: {x: 0.40800017, y: -0.095, z: -0.7970003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2627504433542993215}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &656121622754131562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,6 +140,14 @@ PrefabInstance:
       propertyPath: m_boatController
       value: 
       objectReference: {fileID: 8595777006908588904}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_fishingRodActivePos
+      value: 
+      objectReference: {fileID: 5615634289433663506}
+    - target: {fileID: 4095251803201335950, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      propertyPath: m_fishingRodInactivePos
+      value: 
+      objectReference: {fileID: 6723378560098376337}
     - target: {fileID: 5547802965981907798, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
       propertyPath: boatCamera
       value: 
@@ -123,7 +162,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3273490756331793237, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6723378560098376337}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3463fdcb2a3adae4b9d8da776166332d, type: 3}
 --- !u!4 &2627504433542993215 stripped
@@ -261,6 +303,11 @@ MonoBehaviour:
 --- !u!95 &3767509866548045006 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1786862354439118276, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
+  m_PrefabInstance: {fileID: 3207925896014772490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5615634289433663506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7019539762449932568, guid: be0bcef2dfb663f48823db090b98d31c, type: 3}
   m_PrefabInstance: {fileID: 3207925896014772490}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &7912158789100899355 stripped

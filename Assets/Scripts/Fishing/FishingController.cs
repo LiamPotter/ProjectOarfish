@@ -11,6 +11,7 @@ namespace Fishing
 	{
 		public enum State
 		{
+			Inactive,
 			Idle,
 			ChargingCast,
 			Cast,
@@ -27,6 +28,8 @@ namespace Fishing
 
 		[SerializeField] private FishingLine m_fishingLine;
 		[SerializeField] private FishingRodHelper m_rodHelper;
+		[SerializeField] private Transform m_fishingRodActivePos;
+		[SerializeField] private Transform m_fishingRodInactivePos;
 		[SerializeField] private BoatCamera m_boatCamera;
 		[SerializeField] private BoatProbes m_boatController;
 		[SerializeField] private Animator m_characterAnimator;
@@ -75,11 +78,20 @@ namespace Fishing
 				if (m_currentState != value)
 				{
 					Debug.Log($"New State is {value}");
-					bool isNotIdle = value is not State.Idle;
+					bool isIdle = value is State.Idle or State.Inactive;
 					bool isFishing = value is State.WaitingForFish or State.FishingSequence or State.Cast;
-					m_rodAnimator.SetBool(WindupStartHash, isNotIdle);
+					m_rodAnimator.SetBool(WindupStartHash, isIdle == false);
 					m_rodAnimator.SetBool(FishingStartHash, isFishing);
-					m_boatController.MovementEnabled = value is State.Idle;
+					m_boatController.MovementEnabled = value is State.Idle or State.Inactive;
+
+					if (value is State.Inactive || m_currentState is State.Inactive)
+					{
+						bool inactive = value is State.Inactive;
+						m_rodHelper.transform.SetParent(inactive ? m_fishingRodInactivePos : m_fishingRodActivePos);
+						m_rodHelper.transform.localPosition = Vector3.zero;
+						m_rodHelper.transform.localRotation = Quaternion.identity;
+						m_fishingLine.enableBobAnimation = inactive == false;
+					}
 				}
 
 				m_currentState = value;
@@ -121,6 +133,7 @@ namespace Fishing
 
 		private void Start()
 		{
+			CurrentState = State.Inactive;
 			m_splashEffectParent = Instantiate(m_splashEffectPrefab);
 			m_splashEffect = m_splashEffectParent.GetComponentInChildren<ParticleSystem>();
 			IsReeling = new FlipActionBool(false, ReelingFlipDetected);
@@ -141,7 +154,7 @@ namespace Fishing
 			{
 				return;
 			}
-			
+
 			m_activeFishGroup = SelectClosestFishGroup();
 
 			if (m_activeFishGroup == null)
@@ -156,6 +169,18 @@ namespace Fishing
 
 		private void Update()
 		{
+			if (Input.GetKeyDown(KeyCode.E))
+			{
+				Debug.Log("Debug FishingController Active Swap");
+				bool isInactive = CurrentState == State.Inactive;
+				CurrentState = isInactive ? State.Idle : State.Inactive;
+			}
+			
+			if (CurrentState is State.Inactive)
+			{
+				return;
+			}
+
 			if (CurrentState is State.Idle or State.ChargingCast)
 			{
 				if (Input.GetMouseButton(0))
@@ -191,6 +216,11 @@ namespace Fishing
 					FishingSequenceEnd?.Invoke();
 				}
 			}
+		}
+
+		public void SetFishingActive(bool isActive)
+		{
+			CurrentState = isActive ? State.Idle : State.Inactive;
 		}
 
 		private void EnterFishingSequence(FishConfig fish)
@@ -274,7 +304,7 @@ namespace Fishing
 				CurrentRodHealth += dt * m_rodHealthGainPerSecond;
 				m_objectShaker.SetIntensity(0f);
 			}
-			
+
 			m_fishingLine.UpdateHealthColor(CurrentRodHealth);
 
 			if (IsFishStunned == false)
