@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: bfc5c50854c53ed4f83ab18863d15ebc
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 300675
+  packageName: POLY - Mega Bundle
+  packageVersion: 1.0
+  assetPath: Assets/POLY-MegaBundle/POLY-MegaSurvivalForest/Shaders/Animpic_Foliage.shader
+  uploadId: 728301

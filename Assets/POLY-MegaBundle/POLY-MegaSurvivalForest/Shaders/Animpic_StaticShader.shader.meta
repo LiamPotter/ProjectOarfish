@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c61194769c49566439e564fcdf2deff8
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _SnowTexture: {fileID: 2800000, guid: ab397318286c3d3408185b3651c4a5eb, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 300675
+  packageName: POLY - Mega Bundle
+  packageVersion: 1.0
+  assetPath: Assets/POLY-MegaBundle/POLY-MegaSurvivalForest/Shaders/Animpic_StaticShader.shader
+  uploadId: 728301

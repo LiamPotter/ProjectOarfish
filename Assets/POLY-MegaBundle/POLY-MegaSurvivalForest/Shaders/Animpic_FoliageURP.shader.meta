@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5b588feebc171eb448fd4854bb488cb0
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 300675
+  packageName: POLY - Mega Bundle
+  packageVersion: 1.0
+  assetPath: Assets/POLY-MegaBundle/POLY-MegaSurvivalForest/Shaders/Animpic_FoliageURP.shader
+  uploadId: 728301

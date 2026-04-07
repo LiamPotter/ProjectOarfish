@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9ae534cd1822e8846a85874ec4ee15b9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 36300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 300675
+  packageName: POLY - Mega Bundle
+  packageVersion: 1.0
+  assetPath: Assets/POLY-MegaBundle/POLY-MegaMedicalKit/Scenes/Level_01/OcclusionCullingData.asset
+  uploadId: 728301

@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grass_Simple_Mat
+  m_Shader: {fileID: 4800000, guid: 0154318cd2c5a3747a66420b5d885dd5, type: 3}
+  m_ValidKeywords:
+  - _COLOR2ENABLE_ON
+  - _COLOR2OVERLAYTYPE_VERTEX_POSITION_BASED
+  - _FIXTHEBASEOFFOLIAGE_ON
+  - _SNOWOVERLAYTYPE_WORLD_NORMAL_BASED
+  - _SNOW_ON
+  - _WIND_ON
+  m_InvalidKeywords:
+  - _ALPHATEST_ON
+  - _COLOR2OVERLAYTYPE1_VERTEX_GROUP
+  - _COLOR2OVERLAYTYPE1_VERTEX_POSITION_BASED
+  - _COVERAGEOVERLAYTYPE_WORLD_NORMAL
+  - _SNOWOVERLAY_UV_GROUP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CoverageAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CoverageMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CoverageNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTexture:
+        m_Texture: {fileID: 2800000, guid: ab397318286c3d3408185b3651c4a5eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 35451f8f53eaa0d4083cf056ef34519f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothnessTexture3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowMask:
+        m_Texture: {fileID: 2800000, guid: ab397318286c3d3408185b3651c4a5eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowMask1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowTexture:
+        m_Texture: {fileID: 2800000, guid: ab397318286c3d3408185b3651c4a5eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture00:
+        m_Texture: {fileID: 2800000, guid: 9b98d5cf956710c49a0568aee97ede3b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WavesNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.381
+    - _AlphaOffset: 0.29
+    - _Ambient0deg: 0.142
+    - _Ambient180deg: 0.23
+    - _Ambient90deg: 0.11
+    - _AmbientAmount: 0.15
+    - _BlendNormals: 0
+    - _BumpScale: 1
+    - _COVERAGE: 0
+    - _Color2Enable: 1
+    - _Color2Fade: 0.35
+    - _Color2Level: 0.24
+    - _Color2OverlayType: 0
+    - _Color2OverlayType1: 0
+    - _CoverageContrast: 0.3
+    - _CoverageFade: 0.5
+    - _CoverageLevel: 0
+    - _CoverageMaskScale: 0
+    - _CoverageOverlayType: 0
+    - _CoverageSmoothness: 0
+    - _CoverageThicknessLevel: 1
+    - _CoverageTileScale: 0
+    - _Cutoff: 0.29
+    - _DepthDistance: 0
+    - _DetailNormalMapScale: 1
+    - _DirectLightInt: 1
+    - _DirectLightOffset: 0.285
+    - _DstBlend: 0
+    - _Fixthebaseoffoliage: 1
+    - _Float2: 0
+    - _FoamContrast: 0
+    - _FoamDistance: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0
+    - _GlossyReflections: 1
+    - _IndirectLightInt: 1
+    - _Lambert180deg: 0.222
+    - _Lambert90deg: 0.187
+    - _Metallic: 0
+    - _Mode: 1
+    - _OcclusionStrength: 1
+    - _OffsetAmbient: -0.18
+    - _Opacity: 0
+    - _Parallax: 0.02
+    - _RefractionScale: 0.2
+    - _SLevel1: -1.31
+    - _SNOW: 1
+    - _ShoreOpacity: 0
+    - _Smoothness: 0
+    - _SmoothnessTextureChannel: 0
+    - _Snow: 0
+    - _SnowAmount: 1.5
+    - _SnowFade: 2
+    - _SnowFade1: -1
+    - _SnowLevel: -0.65
+    - _SnowOverlay: 1
+    - _SnowOverlayType: 0
+    - _SnowTiling: 1
+    - _SnowTiling1: 0.26
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SurfaceSmoothness: 0
+    - _Tiling: 1
+    - _TranslucencyInt: 5
+    - _UVSec: 0
+    - _WIND: 1
+    - _WavesNormalIntensity: 1
+    - _WavesSpeed: 0
+    - _WavesTile: 1
+    - _WindForce: 0.372
+    - _WindSpeed: 0.263
+    - _WindWavesScale: 0.342
+    - _ZWrite: 1
+    - __dirty: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.19769214, g: 0.2924528, b: 0.16140084, a: 1}
+    - _Color2: {r: 0.5871909, g: 0.8207547, b: 0.4452207, a: 0}
+    - _Color3: {r: 0.67243433, g: 0.8867924, b: 0.8622691, a: 0}
+    - _CoverageColor: {r: 0, g: 0, b: 0, a: 0}
+    - _DepthColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
+    - _SnowColor: {r: 0.80612355, g: 0.9150943, b: 0.88456607, a: 0}
+    - _SurfaceColor: {r: 1, g: 1, b: 1, a: 0}
+    - _WaterColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 19fdae78bfa17ad459387c726ebbe066
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 300675
+  packageName: POLY - Mega Bundle
+  packageVersion: 1.0
+  assetPath: Assets/POLY-MegaBundle/POLY-MegaSurvivalForest/Shaders/ForestURP.asset
+  uploadId: 728301
